@@ -1,0 +1,275 @@
+<!--
+Smart Irrigation — Website + Mobile UI Template
+Single-file HTML + CSS + minimal JS
+Instructions:
+1. Save this file as `smart-irrigation-template.html` and open in a browser to preview.
+2. The top portion is the responsive website template (desktop + mobile styles).
+3. The bottom portion contains a mobile-app UI mockup (PWA-friendly screens) and CSS for quick prototyping.
+4. Colors: Primary green/blue palette with accent yellow. Fonts: system stack for performance.
+5. Localization: placeholders are provided; swap text for Marathi/Hindi/English as needed.
+
+Notes for developer:
+- The site keeps interactions minimal: Home, Solutions, Farmer Support, About, Contact.
+- Contact form uses a basic JS handler that validates minimal fields and shows a success message (no backend).
+- The mobile UI section demonstrates 3 main screens: Dashboard, Soil/Weather, Alerts. Use as wireframes for React Native/Flutter.
+- All styles are inlined for easy editing. Remove unused parts when integrating into a project.
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Irrigation — Simple Farmer-Friendly</title>
+  <style>
+    /* Basic CSS Reset */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.4;color:#153d2e}
+
+    /* Color palette */
+    :root{
+      --green-700:#1b5e20; /* primary */
+      --green-500:#2e7d32;
+      --blue-500:#0288d1; /* water */
+      --accent:#f6c94a; /* yellow accent */
+      --muted:#f7faf7;
+      --card:#ffffff;
+      --glass:rgba(255,255,255,0.85);
+    }
+
+    /* Page layout */
+    header{background:linear-gradient(90deg,var(--green-500),var(--blue-500));color:white;padding:14px 18px}
+    .container{max-width:1100px;margin:0 auto;padding:18px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand{font-weight:700;font-size:1.15rem}
+    nav ul{list-style:none;display:flex;gap:12px}
+    nav a{color:rgba(255,255,255,0.95);text-decoration:none;padding:8px;border-radius:6px;font-weight:600}
+    nav a.cta{background:var(--accent);color:var(--green-700)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:center;padding:36px 0}
+    .hero h1{font-size:1.9rem;margin-bottom:10px}
+    .hero p{color:#f0f8f2;margin-bottom:14px}
+    .hero .actions{display:flex;gap:10px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700}
+    .btn.primary{background:var(--green-700);color:white}
+    .btn.ghost{background:transparent;border:2px solid rgba(255,255,255,0.3);color:white}
+
+    .card{background:var(--glass);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(10,10,10,0.08)}
+
+    /* Features row */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}
+    .feature{padding:14px;border-radius:10px;background:var(--card);box-shadow:0 6px 18px rgba(10,10,10,0.04)}
+    .feature h3{margin-bottom:8px;color:var(--green-700)}
+
+    /* Why choose us */
+    .why{display:flex;gap:18px;align-items:stretch;margin:22px 0}
+    .why .left{flex:1}
+    .why .right{width:300px}
+
+    /* Testimonials */
+    .testimonials{margin:22px 0}
+    .test-list{display:flex;gap:12px;overflow:auto;padding-bottom:8px}
+    .test{min-width:260px;padding:12px;border-radius:10px;background:var(--card)}
+
+    /* Contact form */
+    form{display:grid;gap:10px}
+    input,textarea,select{padding:10px;border-radius:8px;border:1px solid #e6efe8}
+    .form-row{display:flex;gap:10px}
+    .form-row .col{flex:1}
+
+    footer{padding:18px 0;margin-top:22px;border-top:1px solid #e9f3ef}
+
+    /* Mobile app mockup area */
+    .mockup-wrap{margin:28px 0}
+    .mockup-grid{display:flex;gap:12px;flex-wrap:wrap}
+    .screen{width:260px;border-radius:18px;overflow:hidden;background:linear-gradient(180deg,#fff,#f3f7f3);box-shadow:0 10px 30px rgba(0,0,0,0.12)}
+    .screen header{background:var(--green-700);color:white;padding:10px;text-align:center;font-weight:700}
+    .screen .content{padding:12px}
+    .tile{padding:10px;border-radius:10px;margin-bottom:10px;background:white;box-shadow:0 6px 12px rgba(0,0,0,0.04)}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .features{grid-template-columns:repeat(2,1fr)}
+      nav ul{display:none}
+    }
+    @media (max-width:520px){
+      .features{grid-template-columns:1fr}
+      .hero h1{font-size:1.4rem}
+      header{padding:12px}
+      .screen{width:210px}
+    }
+
+    /* Small utilities */
+    .muted{color:#6b6b6b}
+    .center{text-align:center}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">SmartIrrig<span style="color:var(--accent)">.</span></div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#support">Farmer Support</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="cta" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" id="home">
+    <section class="hero">
+      <div>
+        <h1>Smart Irrigation for Maharashtra Farmers</h1>
+        <p>Save water. Improve yields. Receive alerts in Marathi / Hindi / English. Easy local support and low-cost installation.</p>
+        <div class="actions">
+          <a class="btn primary" href="#contact">Get Started</a>
+          <a class="btn ghost" href="#solutions">Learn More</a>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 class="center">Quick Contact</h3>
+        <p class="muted center" style="font-size:0.95rem">Call / WhatsApp</p>
+        <p class="center" style="font-weight:800;letter-spacing:0.6px">+91 98XXXXXXXX</p>
+        <p class="center muted">Mon - Sat, 9:00 AM - 6:00 PM</p>
+      </aside>
+    </section>
+
+    <section id="solutions">
+      <h2>Our Simple Solutions</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>Sensor-based Irrigation</h3>
+          <p>Soil-moisture sensors auto-control water flow and reduce over-watering.</p>
+        </div>
+        <div class="feature">
+          <h3>SMS/WhatsApp Alerts</h3>
+          <p>Receive easy alerts about irrigation cycles and sensor warnings.</p>
+        </div>
+        <div class="feature">
+          <h3>Low-cost Controllers</h3>
+          <p>Affordable controllers installable on existing pumps and drip systems.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="support">
+      <div class="left card">
+        <h2>Why farmers choose us</h2>
+        <ul style="margin-top:12px;list-style:disc;padding-left:18px;color:#234">
+          <li>Local language support (Marathi/Hindi)</li>
+          <li>Simple dashboard for every phone</li>
+          <li>Saves water & reduces electricity bills</li>
+          <li>Field-tested on local crops like sugarcane, vegetables, and orchards</li>
+        </ul>
+      </div>
+      <div class="right card">
+        <h3>Installation</h3>
+        <p class="muted">We provide on-site installation in Maharashtra districts. Contact us for a schedule.</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Farmer Testimonials</h2>
+      <div class="test-list">
+        <div class="test">
+          <p><strong>Shri. Patil, Baramati</strong></p>
+          <p class="muted">"Water bill decreased by 30% and crops look healthier."</p>
+        </div>
+        <div class="test">
+          <p><strong>Smt. Deshmukh, Pune</strong></p>
+          <p class="muted">"The alerts in Marathi are very helpful. Installation was fast."</p>
+        </div>
+        <div class="test">
+          <p><strong>Shri. Rane, Ahmednagar</strong></p>
+          <p class="muted">"Simple interface — my son checks pump status from his phone."</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact & Support</h2>
+      <div class="card" style="margin-top:12px">
+        <form id="contactForm" onsubmit="return submitForm(event)">
+          <div class="form-row">
+            <div class="col"><input id="name" placeholder="Full Name (in Marathi/Hindi if preferred)" required></div>
+            <div class="col"><input id="phone" placeholder="Phone (+91...)" required></div>
+          </div>
+          <input id="village" placeholder="Village / Taluka" required>
+          <textarea id="message" rows="3" placeholder="Tell us about your farm / query (optional)"></textarea>
+          <div style="display:flex;gap:8px;align-items:center">
+            <button type="submit" class="btn primary">Send Request</button>
+            <div id="formMsg" class="muted"></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="mockup-wrap">
+      <h2 class="center">Mobile App UI — Quick Mockups (For Developers)</h2>
+      <p class="center muted">Use these screens as a simple app flow: Dashboard, Soil & Weather, Alerts & Support</p>
+      <div class="mockup-grid">
+        <div class="screen">
+          <header>Dashboard</header>
+          <div class="content">
+            <div class="tile"><strong>Farm</strong><div class="muted">Sugarcane — 2.5 acres</div></div>
+            <div class="tile"><strong>Soil Moist:</strong> 34%<div class="muted">Last updated 10m ago</div></div>
+            <div class="tile"><strong>Irrigation:</strong> OFF<div class="muted">Next cycle: Manual</div></div>
+            <div class="tile center">[Button] Start Auto Mode</div>
+          </div>
+        </div>
+
+        <div class="screen">
+          <header>Soil & Weather</header>
+          <div class="content">
+            <div class="tile"><strong>Today</strong><div class="muted">Sunny, 32°C</div></div>
+            <div class="tile"><strong>Sensor 1</strong><div class="muted">Moisture 34% — OK</div></div>
+            <div class="tile"><strong>Sensor 2</strong><div class="muted">Battery 82%</div></div>
+          </div>
+        </div>
+
+        <div class="screen">
+          <header>Alerts</header>
+          <div class="content">
+            <div class="tile"><strong>Low Moisture</strong><div class="muted">Field 2 — Take action</div></div>
+            <div class="tile"><strong>Pump Error</strong><div class="muted">Check wiring</div></div>
+            <div class="tile"><strong>Support</strong><div class="muted">Call or WhatsApp</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
+      <div>&copy; SmartIrrig — Helping Farmers (Maharashtra) 2025</div>
+      <div class="muted">Made simple • Mobile-friendly • Marathi support ready</div>
+    </div>
+  </footer>
+
+  <script>
+    function submitForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const village = document.getElementById('village').value.trim();
+      const msg = document.getElementById('message').value.trim();
+      const formMsg = document.getElementById('formMsg');
+      if(!name || !phone || !village){ formMsg.textContent='Please fill required fields'; return false }
+      // Emulate submission
+      formMsg.textContent='Request sent — our team will contact you soon.';
+      // reset short-lived
+      setTimeout(()=>{ formMsg.textContent=''; document.getElementById('contactForm').reset() },3000);
+      return false;
+    }
+  </script>
+</body>
+</html>

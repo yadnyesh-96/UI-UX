@@ -1,0 +1,444 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Yadnynesh Dhangar — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0f1724;
+    --card:#0b1220;
+    --muted:#9aa6bd;
+    --accent:#3b82f6;
+    --accent-2:#7c3aed;
+    --glass: rgba(255,255,255,0.04);
+    --glass-2: rgba(255,255,255,0.02);
+    --radius:14px;
+    --container:1100px;
+    --transition: 350ms cubic-bezier(.2,.9,.2,1);
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font-family:Inter, Poppins, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    background:
+      radial-gradient(900px 400px at 10% 10%, rgba(59,130,246,0.08), transparent 12%),
+      radial-gradient(600px 300px at 95% 85%, rgba(124,58,237,0.06), transparent 10%),
+      var(--bg);
+    color:#e6eef8;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height:1.45;
+  }
+
+  /* Layout */
+  .wrap{max-width:var(--container);margin:0 auto;padding:36px 24px 120px}
+  nav{
+    position:fixed;left:0;right:0;top:18px;margin:0 auto;width:calc(100% - 48px);
+    max-width:var(--container);display:flex;align-items:center;justify-content:space-between;
+    gap:16px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    padding:10px 16px;border-radius:12px;backdrop-filter: blur(6px);border:1px solid rgba(255,255,255,0.04);
+    z-index:30;transition:var(--transition);
+  }
+  .brand{display:flex;align-items:center;gap:12px}
+  .logo{
+    width:46px;height:46px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    display:grid;place-items:center;font-weight:700;color:white;font-family:Poppins;
+    box-shadow:0 6px 20px rgba(59,130,246,0.18);
+  }
+  .brand h4{font-size:16px;margin:0;color:#ecf2ff}
+  .brand p{font-size:12px;margin:0;color:var(--muted)}
+
+  nav ul{display:flex;gap:14px;list-style:none;margin:0;padding:0}
+  nav a{color:var(--muted);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600;font-size:14px;transition:var(--transition)}
+  nav a:hover{color:white;background:var(--glass)}
+
+  .hero{
+    margin-top:88px;display:grid;grid-template-columns: 1fr 420px;gap:36px;align-items:center;padding:56px 16px;
+  }
+  .intro h1{font-size:36px;margin:0 0 10px;letter-spacing:-0.3px}
+  .intro h2{font-weight:600;color:var(--accent);margin:0 0 12px;font-size:18px}
+  .typing{display:inline-block;color:#dff0ff;border-right:2px solid rgba(255,255,255,0.14);padding-right:6px;white-space:nowrap;overflow:hidden}
+  .lead{color:var(--muted);margin-bottom:18px}
+
+  .cta{display:flex;gap:12px;align-items:center}
+  .btn{
+    background:linear-gradient(90deg,var(--accent),var(--accent-2));
+    color:white;padding:12px 18px;border-radius:10px;border:none;cursor:pointer;font-weight:700;box-shadow:0 8px 30px rgba(59,130,246,0.12);transition:transform .22s ease;
+  }
+  .btn:active{transform:translateY(2px)}
+  .ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:10px 14px;border-radius:10px}
+
+  /* Profile card */
+  .card{
+    background:linear-gradient(180deg,var(--card), rgba(255,255,255,0.02));
+    border-radius:var(--radius);padding:22px;border:1px solid rgba(255,255,255,0.035);
+    box-shadow:0 10px 40px rgba(2,6,23,0.6);
+  }
+  .profile{
+    display:flex;gap:16px;align-items:center;
+  }
+  .avatar{
+    width:120px;height:120px;border-radius:16px;background:linear-gradient(135deg,#fff2, #fff1);
+    overflow:hidden;flex-shrink:0;padding:6px;border:1px solid rgba(255,255,255,0.03);
+  }
+  .avatar img{width:100%;height:100%;object-fit:cover;border-radius:10px;display:block}
+  .meta h3{margin:0 0 6px;font-size:20px}
+  .meta p{margin:0;color:var(--muted);font-size:13px}
+
+  .meta .tags{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+  .tag{background:rgba(255,255,255,0.02);padding:6px 8px;border-radius:8px;font-size:12px;color:var(--muted)}
+
+  /* Skills */
+  .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+  .skill{background:var(--glass);padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+  .skill h4{margin:0 0 8px;font-size:13px}
+  .bar{height:8px;background:rgba(255,255,255,0.04);border-radius:8px;overflow:hidden}
+  .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-2));width:0%;border-radius:8px;transition:width 900ms cubic-bezier(.2,.9,.2,1)}
+
+  /* Projects */
+  section h2.section-title{color:#e8f2ff;margin:36px 0 18px;font-size:20px}
+  .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .project{
+    background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+    border-radius:12px;padding:16px;border:1px solid rgba(255,255,255,0.025);position:relative;overflow:hidden;
+    transition:transform .35s ease, box-shadow .35s ease;
+  }
+  .project:hover{transform:translateY(-8px);box-shadow:0 18px 50px rgba(2,6,23,0.7)}
+  .project h3{margin:0 0 8px;color:#eaf6ff}
+  .project p{margin:0;color:var(--muted);font-size:13px}
+  .project .meta{display:flex;justify-content:space-between;align-items:center;margin-top:12px}
+  .project .view{color:var(--accent);font-weight:700;font-size:13px}
+
+  /* Timeline */
+  .timeline{margin-top:22px;border-left:2px dashed rgba(255,255,255,0.03);padding-left:20px}
+  .timeline-item{position:relative;padding:14px 0}
+  .timeline-item::before{content:"";width:12px;height:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));position:absolute;left:-30px;border-radius:10px;top:16px;border:2px solid rgba(255,255,255,0.04)}
+
+  .experience h4{margin:0 0 4px}
+  .experience p{margin:0;color:var(--muted);font-size:13px}
+
+  /* Contact */
+  .contact-form{display:grid;gap:12px;grid-template-columns:1fr 1fr;margin-top:18px}
+  .contact-form input,.contact-form textarea{grid-column:span 2;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit}
+  .contact-form input::placeholder,.contact-form textarea::placeholder{color:rgba(255,255,255,0.35)}
+  .contact-form textarea{min-height:130px;resize:vertical}
+  .contact-form button{grid-column:span 2;padding:12px;border-radius:10px;border:none;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:white;font-weight:700;cursor:pointer}
+
+  /* Footer */
+  footer{margin-top:46px;padding:28px 16px;color:var(--muted);text-align:center;font-size:13px}
+
+  /* Responsive */
+  @media (max-width:980px){
+    .hero{grid-template-columns:1fr;gap:18px}
+    nav{top:12px}
+    .skills-grid{grid-template-columns:repeat(2,1fr)}
+    .contact-form input,.contact-form textarea{grid-column:span 2}
+  }
+  @media (max-width:560px){
+    .skills-grid{grid-template-columns:1fr}
+    nav ul{display:none}
+    .wrap{padding:20px}
+    .intro h1{font-size:26px}
+    .avatar{width:96px;height:96px}
+  }
+
+  /* Tiny animation utilities */
+  .fadein{opacity:0;transform:translateY(8px);transition:opacity 700ms ease, transform 700ms ease}
+  .visible{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">
+    <div class="logo">YD</div>
+    <div>
+      <h4>Yadnynesh Dhangar</h4>
+      <p>Embedded Engineer • Full‑Stack • IoT</p>
+    </div>
+  </div>
+
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="wrap">
+  <section id="home" class="hero" aria-label="Hero">
+    <div class="intro">
+      <h1 class="fadein">Hi — I'm <span style="color:var(--accent)">Yadnynesh</span>, an Embedded Developer</h1>
+      <h2 class="typing fadein" data-phrases='["IoT & Embedded", "Full-Stack Developer", "AI Experimenter", "Problem Solver"]'></h2>
+      <p class="lead fadein">I build efficient, reliable systems that connect hardware and software — from microcontrollers to cloud dashboards. I like clear code, thoughtful interfaces, and practical innovation.</p>
+      <div class="cta fadein">
+        <a class="btn" href="#contact">Let's work together</a>
+        <a class="ghost" href="#projects">See projects</a>
+      </div>
+
+      <div class="fadein" style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
+        <div class="tag">Open to work</div>
+        <div class="tag">Embedded Systems</div>
+        <div class="tag">IoT • ML • Cloud</div>
+      </div>
+    </div>
+
+    <aside class="card fadein" aria-label="Profile card">
+      <div class="profile">
+        <div class="avatar">
+          <img src="./IMG_2634.JPG" alt="Yadnynesh Dhangar">
+        </div>
+        <div class="meta">
+          <h3>Yadnynesh Dhangar</h3>
+          <p>Embedded Engineer & Full-Stack Developer</p>
+          <div class="tags">
+            <div class="tag">Java</div>
+            <div class="tag">Python</div>
+            <div class="tag">C/C++</div>
+            <div class="tag">RTOS</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:16px" class="skills-grid">
+        <div class="skill">
+          <h4>Embedded / IoT</h4>
+          <div class="bar"><i data-pct="92"></i></div>
+        </div>
+        <div class="skill">
+          <h4>System Design</h4>
+          <div class="bar"><i data-pct="86"></i></div>
+        </div>
+        <div class="skill">
+          <h4>Web / Dashboard</h4>
+          <div class="bar"><i data-pct="78"></i></div>
+        </div>
+        <div class="skill">
+          <h4>AI / ML</h4>
+          <div class="bar"><i data-pct="68"></i></div>
+        </div>
+        <div class="skill">
+          <h4>DevOps</h4>
+          <div class="bar"><i data-pct="64"></i></div>
+        </div>
+        <div class="skill">
+          <h4>Communication</h4>
+          <div class="bar"><i data-pct="90"></i></div>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <section id="about" class="fadein" style="margin-top:24px">
+    <h2 class="section-title">About me</h2>
+    <div style="display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start">
+      <div>
+        <p style="color:var(--muted);font-size:15px">
+          I design and implement embedded systems that solve real-world problems — from low-level firmware up to full-stack dashboards. I enjoy converting abstract requirements into efficient hardware-software solutions, mentoring teammates, and iterating quickly on prototypes. My style is pragmatic: clean architecture, thorough testing, and a bias toward delivering value.
+        </p>
+
+        <div style="margin-top:18px">
+          <h4 style="margin:0 0 8px">Work approach</h4>
+          <ul style="color:var(--muted);margin:0 0 12px 18px">
+            <li>Fast prototyping with maintainable code</li>
+            <li>Cross-disciplinary design — electronics to cloud</li>
+            <li>Automated testing and CI for reliability</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:8px">
+          <h4 style="margin:0 0 8px">Selected tools</h4>
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <div class="tag">STM32</div>
+            <div class="tag">ESP32</div>
+            <div class="tag">Linux</div>
+            <div class="tag">Docker</div>
+            <div class="tag">React</div>
+            <div class="tag">Postgres</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h4 style="margin:6px 0 10px">Experience</h4>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="experience">
+              <h4>Embedded Engineer · Acme Labs</h4>
+              <p>2022 — Present · Microcontroller firmware & IoT platform</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="experience">
+              <h4>Intern · Embedded Systems</h4>
+              <p>2021 — 2022 · Sensors & control systems</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="skills" class="fadein" style="margin-top:32px">
+    <h2 class="section-title">Skills</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+      <div class="card">
+        <h4 style="margin:0 0 10px">Technical highlights</h4>
+        <ul style="color:var(--muted);margin:0 0 6px 18px">
+          <li>Real-time firmware (RTOS), low-power design</li>
+          <li>Edge ML & sensor fusion</li>
+          <li>Full-stack dashboards & APIs</li>
+          <li>CI/CD, containerized deployments</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4 style="margin:0 0 10px">Languages & frameworks</h4>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <div class="tag">C/C++</div><div class="tag">Python</div><div class="tag">Java</div><div class="tag">Node.js</div><div class="tag">React</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="fadein" style="margin-top:32px">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <article class="project">
+        <h3>Smart Irrigation System</h3>
+        <p>IoT system for farm water optimization — sensor network, edge control, and cloud dashboard for analytics.</p>
+        <div class="meta">
+          <small style="color:var(--muted)">STM32 · LoRa · Node</small>
+          <a class="view" href="#" onclick="alert('Open project — replace with real link')">View →</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <h3>Line Following Robot</h3>
+        <p>Autonomous robotics with PID control, sensors, and rapid prototyping for competitions.</p>
+        <div class="meta">
+          <small style="color:var(--muted)">Embedded C · Sensors</small>
+          <a class="view" href="#" onclick="alert('Open project — replace with real link')">View →</a>
+        </div>
+      </article>
+
+      <article class="project">
+        <h3>Alumni Portal</h3>
+        <p>Full-stack web portal for alumni management with role-based dashboards and analytics.</p>
+        <div class="meta">
+          <small style="color:var(--muted)">React · Java · Postgres</small>
+          <a class="view" href="#" onclick="alert('Open project — replace with real link')">View →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="fadein" style="margin-top:32px">
+    <h2 class="section-title">Contact</h2>
+    <div class="card">
+      <form id="contactForm" class="contact-form" onsubmit="return false" aria-label="Contact form">
+        <input id="name" type="text" placeholder="Your name" required>
+        <input id="email" type="email" placeholder="Your email" required>
+        <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+        <button id="sendBtn" type="submit">Send message</button>
+      </form>
+      <p id="formMsg" style="color:var(--muted);margin-top:10px;font-size:14px"></p>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Yadnynesh Dhangar — Built with care • <span style="color:var(--muted)">Available for freelance & full-time</span>
+  </footer>
+</div>
+
+<script>
+  // Typing effect using phrases in data-attribute
+  (function(){
+    const el = document.querySelector('.typing');
+    if(!el) return;
+    const phrases = JSON.parse(el.getAttribute('data-phrases'));
+    let idx = 0, pos = 0, forward = true;
+    function step(){
+      const current = phrases[idx];
+      if(forward){
+        pos++;
+        if(pos>current.length){ forward=false; setTimeout(step,800); return }
+      } else {
+        pos--;
+        if(pos<0){ forward=true; idx=(idx+1)%phrases.length; setTimeout(step,300); return }
+      }
+      el.textContent = current.slice(0,pos);
+      setTimeout(step, 60 + Math.random()*40);
+    }
+    step();
+  })();
+
+  // Animate skill bars when visible
+  (function(){
+    const bars = document.querySelectorAll('.bar > i');
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(ent=>{
+        if(ent.isIntersecting){
+          const i = ent.target;
+          const pct = i.dataset.pct || 60;
+          i.style.width = pct + '%';
+          io.unobserve(i);
+        }
+      });
+    }, {threshold:0.2});
+    bars.forEach(b => io.observe(b));
+  })();
+
+  // Simple reveal on scroll for .fadein
+  (function(){
+    const els = document.querySelectorAll('.fadein');
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target) }
+      })
+    }, {threshold:0.12});
+    els.forEach(n=>io.observe(n));
+  })();
+
+  // Contact form placeholder behaviour
+  (function(){
+    const form = document.getElementById('contactForm');
+    const btn = document.getElementById('sendBtn');
+    const msg = document.getElementById('formMsg');
+    btn.addEventListener('click', ()=>{
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      if(!name||!email||!message){ msg.textContent = 'Please fill all fields.'; return; }
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      setTimeout(()=>{
+        btn.textContent = 'Sent ✓';
+        msg.style.color = '#9be7ff';
+        msg.textContent = 'Thanks! I will get back to you within 2 business days.';
+        form.reset();
+        setTimeout(()=>{ btn.textContent='Send message'; btn.disabled=false; msg.textContent=''; msg.style.color='var(--muted)'; }, 2600);
+      }, 900);
+    });
+  })();
+
+  // Smooth scroll for internal links
+  (function(){
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth', block:'start'}); }
+      })
+    });
+  })();
+</script>
+
+</body>
+</html>
+<!-- ...existing code... -->
