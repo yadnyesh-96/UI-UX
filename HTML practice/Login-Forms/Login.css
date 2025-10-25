@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    width:80%;
+    min-height: 100px;
+    margin: auto;
+    border: 1px solid #000; 
+    padding: 50px 40px 50px 40px; /* 10px top, 20px right, 30px bottom, 40px left */
+    background-color: rgb(150, 243, 199);
+}
+
+#heading,h1{
+    color: white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3px 3px;
+    background-color: rgb(3, 129, 87);
+    
+}
+
+table,th,td{
+    margin: auto;
+    width: 35%;
+    
+}
+
+#table1{
+    border-spacing: 0 10px;
+    background-color: white;
+}
+
+#img{
+    width: 3%;
+    background-color: rgb(14, 156, 109);
+}
+
+#userIMG,#passIMG{
+    padding-left: 7px;
+    padding-top: 2px;
+    width: 45px;
+    height: 35px;
+}
+
+#username,#password{
+    padding: 7px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: left;
+    
+}
+
+#forgot{
+    text-align: left;
+    padding: 4px;
+    text-decoration: none;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(14, 156, 109);
+    padding-right: 10px;
+}
+
+#loginbtn{
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(14, 156, 109);
+    color: white;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.1s; /* Smooth transition for hover effects */
+}
+
+.loginbtn:hover {
+  background-color: #00f70c; /* Darker green on hover */
+  box-shadow: 0 5px 15px rgba(36, 35, 35, 0.2); /* Subtle shadow on hover */
+}
+
+#Nuser{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#sign{
+    text-decoration: none;
+    color: rgb(14, 156, 109);
+    font-style: italic;
+}
