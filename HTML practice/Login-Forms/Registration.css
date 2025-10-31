@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(178, 235, 239);
+}
+
+.box{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.outline{
+    width: 50%;
+    border: 2px solid #000;
+    margin: auto;
+    background-color: white;
+}   
+
+#label{
+    background-color: white;
+    font-size: 40px;
+    text-decoration-line: underline;
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#paragraph{
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 5px 60px 3px 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table{
+    width: 95%;
+    margin: auto;
+    border-spacing: 8px;
+   
+}
+
+table,td,tr{
+    background-color: white;
+    
+}
+
+td,tr{
+    background-color: rgba(245, 243, 243, 0.865);
+}
+
+label{
+    background-color: rgba(245, 243, 243, 0.865);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+input[type="email"],
+input[type="time"],
+input[type="file"]{
+    font-size: 15px;
+    font-style: italic;
+    width: 100%;
+    background-color: rgba(245, 243, 243, 0.865);
+    border-style: none;
+    padding: 4px;
+}
+
+.seperaters{
+    width: 95%;
+    margin: auto;
+    background-color: black;
+    padding: 1px;   
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+.Heading{
+    width: 95%;
+    margin: auto;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    background-color: rgba(180, 175, 175, 0.674);
+}
+
+
+#pay{
+    text-align: center;        /* centers inline elements horizontally */
+}
+
+#payment{
+    width: 80%; 
+    background-color: white;
+    padding: 10px;  
+    border: 1px solid #e6e4e4ea;
+}
+
+.instruction{
+    width: 95%;
+    margin: auto;
+    padding: 1px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.anchor{
+    width: 95%;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
