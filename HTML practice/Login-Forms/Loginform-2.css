@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(201, 197, 197);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.outer{
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+table,tr,td{
+    width: 50%;
+    margin: auto;
+    
+}
+
+.block-1{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.block-2{
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-left: 35px;
+    padding-right: 35px;
+    background: linear-gradient(to top,#10a475, #30ce95);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10px;
+}
+#sign-up{
+    margin-top: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    font-family:  "Poppins", sans-serif;
+    background: linear-gradient(to top,#10b981, #13c589);
+}
+
+:hover #sign-up{
+    cursor: pointer;
+}
+
+label{
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    font-family: "Poppins", sans-serif;
+}
+
+input[type="text"],
+input[type="password"]{
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #dfdddd;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+#sign-in{
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+    padding: 17px;
+    border: none;
+    font-size: 18px;
+    border-radius: 4px;
+    color: white;
+    background-color: #059669;
+}
+
+:hover #sign-in{
+    cursor: pointer;
+}
+
+h6{
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    font-family: poppins, sans-serif;
+}
+
+#social-icon {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 50%;
+}
+
+#social-icon-btn {
+    width: 40px; /* Adjust size */
+    height: 40px;
+    border: none;
+    margin: 10px;
+    border-radius: 50%;
+    background: none;
+    cursor: pointer;
+    display: inline-block; /* Keeps buttons inline */
+}
