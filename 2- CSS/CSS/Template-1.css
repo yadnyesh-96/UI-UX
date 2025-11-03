@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    min-height: 100px;
+    border: 1px solid #000;
+}
+
+.box{
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(164, 164, 223);    
+}
+
+.container .box label{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+.box-1{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(75, 74, 74);
+}
+
+.box-1 ul li{
+    list-style: none;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+}
+.box-1 ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+}
+.box-1 ul li a:hover{
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.content-area{
+    width: 100%;
+    display: inline-flex;
+}
+
+.content-area .left-content{
+    width: 20%;
+    margin: 5px;
+    padding: 10px;
+    min-height: 100px;
+    border: 1px solid #000;
+}
+
+.content-area .centre-content{
+    width: 55%;
+    margin: 5px;
+    min-height: 100px;
+    border: 1px solid #000;
+}
+
+.content-area .right-content{
+    width: 25%;
+    margin: 5px;
+    min-height: 100px;
+    border: 1px solid #000;
+}
+
+.footer{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.content-area .left-content .marquee{
+    width: 100%;
+    
+}
+
+.content-area .left-content marquee ul li a{
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.centre-content .feedback{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid #ff0f0f;
+    border-radius: 20px;
+}
+
+
+#img{
+    width: 120px;
+    height: 120px;    
+}
+
+.image label{
+    font-size: 37px;
+    font-weight: bold;
+}
+
+.image p{
+    font-size: 15px;
+    color: rgb(129, 129, 129);
+    margin-bottom: 15px;
+}
+
+.centre-content .feedback .form table{
+    width: 80%;
+    margin: auto;
+    border-spacing: 5px;
+}
+
+.feedback .form table tr td{
+    border: 1px solid #000;
+}
+
+input[type="text"],
+input[type="email"]{
+    width: 100%;
+    padding: 12px;
+    font-size: 20px;
+    border: 1px solid #daf6e7;
+    background-color: #f5fbf8df;
+    border-radius: 8px;
+}
+
+#msg{
+    height: 120px;
+}
+
+#submit-btn{
+    color: #ff0f0f;
+}
