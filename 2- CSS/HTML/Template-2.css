@@ -66,7 +66,7 @@
 
 .box .content-1{
     width: 100%;
-    min-height: 700px;
+    min-height: 900px;
     background-color: #e1f5ea;
 }
 
@@ -89,13 +89,15 @@
 
 .content-1 .content-space{
     width: 100%;
-    min-height: 500px;
+    
     padding: 40px;
 }
 
+
 .content-space .content-img{
     width: 35%;
-    min-height: 600px;
+ 
+    float: left;
 }
 
 .content-img img{
@@ -107,12 +109,43 @@
 }
 
 .content-img img:hover{
+
     border: 3px solid #ffffff;
 }
 
+.content-space .content-detail{
+    width: 60%;
+    min-height: 650px;
+    float: right;
+    border: 1px solid #000;
+}
 
+.content-detail .detail-paragraph{
+    width: 100%;
+}
 
+.content-detail .detail-paragraph label{
+    font-size: 27px;
+    font-weight: bold;
+}
 
+.content-detail .detail-paragraph h2{
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.detail-paragraph p{
+    margin-top: 13px;
+    font-size: 19px;
+    margin-bottom: 19px;
+}
+
+#img-heading{
+    font-size: 22px;
+    font-weight: bold;
+    color: #FB8814;
+    
+}
 
 
 
