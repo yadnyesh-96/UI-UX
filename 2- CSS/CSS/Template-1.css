@@ -8,7 +8,7 @@
 }
 
 .container{
-    width: 80%;
+    width: 100%;
     margin: auto;
     min-height: 100px;
     border: 1px solid #000;
@@ -208,4 +208,101 @@ input[type="email"]{
     width: 100%;
     border: 1px solid #09ff00;
     min-height: 100px;
+}
+
+.footer .top{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    background-color: #353549;
+    border-radius: 10px;
+}
+
+.footer .top h2{
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.footer .top p{
+    color: rgb(216, 215, 215);
+    margin-top: 10px;
+}
+
+.footer .top .first{
+    width: 30%;
+    border: 1px solid #ffffff;
+}
+
+#email-notification{
+    width: 50%;
+    margin-top: 10px;
+    padding: 3px;
+}
+
+#email-send-btn{
+    width: 17px;
+    height: 16px;
+}
+
+.footer .second{
+    width: 15%;
+    padding-left: 10px;
+    border: 1px solid #ffffff;
+}
+
+.footer .top .second .label{
+    margin-bottom: 10px;
+}
+.footer .second label{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer .second h5 a{
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.footer .top  .second  h5 a:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    border: 7px;
+}
+
+.footer .top .third{
+    border: 1px solid #f1eded;
+    width: 20%;
+    padding-left: 10px;
+}
+
+.footer .top .third .label{
+    margin-bottom: 10px;
+}
+
+.footer .top .third h5 a{
+    color: rgb(205, 205, 205);
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+.footer .top .third .label label{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer .top .third h5 a:hover{
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    border: 7px;
+}
+
+.footer .bottom{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0400ff;
 }
