@@ -1,0 +1,323 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+    font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+
+    
+}
+
+
+.box{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #000;    /*Remove*/
+}
+
+.box .nav-bar{
+    width: 100%;
+    min-height: 90px;
+    padding:10px;
+
+}
+
+.nav-bar .watermark{
+    width: 10%;
+    float: left;  
+
+}
+.nav-bar .watermark img{
+    width: 100%;
+}
+
+
+
+.nav-bar .menue{
+    float:inline-start;
+    width: 30%;
+    padding: 11px 0px 11px 0px;
+    margin-left: 400px;
+    margin-right: 10px;
+}
+
+.menue ul li{
+  list-style: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.menue ul li a{
+  text-decoration: none;
+  margin-right: 8px;
+  color: #25384C;
+}
+
+.menue ul li a:hover{
+  font-weight: bolder;
+  text-shadow: #2020be;
+  cursor: pointer;
+}
+
+.nav-bar .search-container{
+  float: inline-start;
+  margin-left: 50px;
+  width: 20%;
+  padding: 5px;
+  border: 1px solid #eae7e7;
+  border-radius: 20px;
+}
+
+.nav-bar .search-container button{
+  height: 25px;
+  width: 25px;
+  border: none;
+  background-color: rgb(218, 233, 233);
+  border-radius: 50%;
+}
+
+.nav-bar .search-container button:hover{
+  cursor: pointer;
+}
+
+#book-now:hover{
+  font-size: 18px;
+  padding: 2px;
+  font-weight: bolder;
+}
+
+.book-btn button:hover{
+  background: #009f85;              /* brighter color on hover */
+  transform: scale(1.08);           /* zoom slightly */
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3); /* shadow */
+  letter-spacing: 1px;      
+}
+
+input[type="text"]{
+  width: 80%;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+}
+
+input:hover,
+input:focus {
+    border: 1px solid #e1ece9;
+    outline: none;
+}
+
+.nav-bar .book-btn{
+  float: right;
+  width: 10%;
+  
+}
+
+.nav-bar .book-btn button{
+  width: 70%;
+  padding: 11px 0px 11px 0px;
+  border-radius: 25px;
+  background-color: #273656;
+}
+
+.nav-bar .book-btn a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.box .slider{
+  width: 100%;
+  min-height: 700px;
+  border: 1px solid #000;   /*Remove*/
+}
+
+.slider .image{
+  padding: 10px;
+  width: 99%;
+  margin: auto;
+}
+
+#camera{
+  border-radius: 25px;
+  width: 100%;
+}
+
+.box .slider-1{
+  width: 100%;
+  min-height: 1200px; 
+  padding: 80px;
+  border: 1px solid #fb1111;   /*Remove*/
+}
+
+.slider-1 .block-1{
+  width: 100%;
+  min-height: 400px;
+  margin-bottom: 70px;
+
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: flex-start;
+    gap: 32px;    
+}
+
+.block-1 .B-a{
+  width: 35%;
+  min-height: 400px;
+  border-radius: 35px;
+ ;  /*remove*/
+}
+
+.block-1 .B-heading{
+  width:100%;
+  min-height: 150px;
+  padding: 10px 0px 0px 0px;
+  
+}
+
+.B-heading h2{
+  color: #3C3C44;
+  font-size: 30px;
+}
+
+.block-1 .B-text{
+  width: 100%;
+  min-height: 250px;
+    background-image:
+    linear-gradient(to top, rgba(0, 0, 0, 0) 50%, rgb(255, 255, 255) 100%),
+    url('../Images/bg.jpeg'); 
+
+  background-size: cover;
+  background-position: center;
+  border: none;
+  padding-bottom: 20px;
+  color: white;
+}
+
+.B-text p{
+    width: 80%;
+    color: #565664;
+    font-size: 20px;
+    text-align: left;
+    font-weight: bolder;
+    line-height: 1.7;
+    padding-top: 20px;
+
+}
+
+#B-baground{
+  background-image:
+  linear-gradient( rgba(39, 38, 38, 0.71), rgba(39, 38, 38, 0.71)),
+  url('../Images/Action-Camera.jpeg');
+}
+
+#B-baground-1{
+  background-image:
+  linear-gradient( rgba(39, 38, 38, 0.71), rgba(115, 114, 114, 0.452)),
+  url('../Images/Wild-life.png');
+}
+
+.B-a .icon{
+  width: 100%;
+  min-height: 130px;
+  margin: 20px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.B-a .icon-text{
+  width: 100%;
+  min-height: 130px;
+  text-align: center;
+}
+
+.icon-text h2{
+  padding: 0px 5px 0px 5px;
+  color: white;
+  font-size: 30px;
+}
+
+.icon-text p{
+  margin-top: 10px;
+  color: white;
+  font-size: 20px;
+  padding: 0px 5px 0px 5px;
+ 
+}
+
+.B-a .icont-btn{
+  width: 100%;
+  min-height: 130px;
+  text-align: center;
+  padding: 20px;
+}
+
+.icont-btn button{
+  width: 35%;
+  padding: 20px;
+  border-radius: 60px;
+  background-color: white;
+}
+
+.icont-btn button:hover{
+  cursor: pointer;
+   box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.344); /* soft glow */
+  transform: scale(1.07);
+}
+
+.icont-btn a{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.icont-btn a:hover{
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+
+.slider-1 .block-2{
+  width: 100%;
+  min-height: 770px;
+  border: 1px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+.chat-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 60px;
+  height: 60px;
+  background: #25d366; /* WhatsApp green */
+  color: white;
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  text-decoration: none;
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.chat-btn:hover {
+  transform: scale(1.1);
+  background: #20b957;
+}
+
+.chat-btn img {
+  width: 32px;
+  height: 32px;
+}
