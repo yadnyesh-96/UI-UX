@@ -198,6 +198,7 @@ input[type="text"]:hover{
     background-color: #eff4cf;
     /* display: flex; */
     padding: 40px;
+    background: transparent;
 }
 
 /* form  */
@@ -206,51 +207,42 @@ input[type="text"]:hover{
     margin: auto;
     border: 1px solid #ff0000;
     padding: 20px;
+    background-color: #ffffffa1;
 }
-
-.outer label
-{   width: 80%;
+.outer .label{
+    width: 80%;
     margin: auto;
-    margin-bottom: 20px;
-    /* margin: 20px 45px 10px 45px; */
-    border: 1px solid #000;
-    display: flex;
-    padding: 8px;
-    font-size: 22px;
+    text-align: center;
+    background-color:#eff4cf;
+    padding: 5px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.label label{
+    background: none;
+    font-size: 24px;
     font-weight: bold;
     color: #ff8800;
-    background-color: white;
-    border-radius: 10px;
-    justify-content: center;
 }
-
 .outer table{
-    margin: auto;
     width: 80%;
-    border: 1px solid #000;
-}
+    margin: auto;
+    border-collapse: collapse;
+
+} 
 table tr td{
-    border: 1px solid #000;
+    border-spacing: 80px;
 }
 
+.outer tr td{
+    border: none;
+}
 input[type="email"],
 input[type="Password"]{
     width: 100%;
-    padding: 10px;
-    font-size: 17px;
+    /* background: none; */
     border: none;
-}
-
-table tr td button{
-    width: 100%;
-    padding: 8px;
-    background-color: #ff8800;
-    border: none;
-    border-radius: 5px;
-}
-table tr td button a{
-    font-size: 21px;
-    background: none;
     font-weight: bold;
-    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
 }
