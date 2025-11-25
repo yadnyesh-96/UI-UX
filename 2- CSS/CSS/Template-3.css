@@ -2,7 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    background-color: aliceblue;
+
 }
 
 .box{
@@ -213,7 +213,7 @@ input[type="text"]:hover{
     width: 80%;
     margin: auto;
     text-align: center;
-    background-color:#eff4cf;
+    
     padding: 5px;
     border-radius: 8px;
     margin-bottom: 30px;
@@ -228,15 +228,13 @@ input[type="text"]:hover{
     width: 80%;
     margin: auto;
     border-collapse: collapse;
+    background: none;
 
 } 
 table tr td{
     border-spacing: 80px;
 }
 
-.outer tr td{
-    border: none;
-}
 input[type="email"],
 input[type="Password"]{
     width: 100%;
