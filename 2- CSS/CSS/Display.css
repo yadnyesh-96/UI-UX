@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* UNIVERSAL SELECTOR  */
+*{
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;
+
+    /* font  */
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+
+}
+body{
+    display: flex;
+    justify-content:column;
+}
+/* OUTER CLASS  */
+.wrapper{
+    display:flex;
+    flex-basis: 80%;
+    margin: auto;
+    padding: 25px;
+    gap: 60px;
+    border: 1px solid #ff0000;
+}
+/* SEPRATERS  */
+.wrapper .column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    border: 1px solid #7d7c7c38;
+    padding: 10px;
+    min-height: 1000px;
+    margin: 10px;
+    gap: 20px;
+}
+/* LABLE  */
+.column label{
+    font-size: 18px;
+    font-weight:480;
+    color: rgb(38, 53, 63);
+}
+
+/* FLEX-START  */
+.column .C-FS-1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    min-height: 300px;
+    border: 1px dashed #545454ce;
+    /* justify-content: flex-start; */
+}
+/* FOR BORDER PURPOSE  */
+.C-FS-1 .FS-bd{
+    display: flex;
+    flex-direction: row;
+    min-height: 50px;
+    border: 1px solid #ea6666;
+    margin-bottom: 20px;
+    gap: 20px;
+
+}
+/* FLEX-START ROW-1  */
+.C-FS-1 .FS1-1{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-FS-1 .FS1-2{
+    display: flex;
+    flex-basis: 5%;
+    background-color: rgba(0, 60, 255, 0.918);   
+}
+.C-FS-1 .FS1-3{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);   
+}
+.C-FS-1 .FS1-4{
+    display: flex;
+    flex-basis: 51%;
+    background-color: rgba(0, 60, 255, 0.918);   
+}
+/* FLEX-START ROW-2  */
+.C-FS-1 .FS2-1{
+    display: flex;
+    flex-basis: 25%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-FS-1 .FS2-2{
+    display: flex;
+    flex-basis: 16%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-FS-1 .FS2-3{
+    display: flex;
+    flex-basis: 3%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-FS-1 .FS2-4{
+    display: flex;
+    flex-basis: 54%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+/* FLEX-START ROW-3  */
+.C-FS-1 .FS3-1{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-FS-1 .FS3-2{
+    display: flex;
+    flex-basis: 2%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-FS-1 .FS3-3{
+    display: flex;
+    flex-basis: 20%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+/* CENTRE  */
+.column .C-C-1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    min-height: 300px;
+    border: 1px dashed #545454ce;
+    justify-content: center;
+}
+/* FOR BORDER PURPOSE  */
+.C-C-1 .C-bd{
+    display: flex;
+    flex-direction: row;
+    min-height: 50px;
+    border: 1px solid #ea6666;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+/* CENTRE ROW-1  */
+.C-C-1 .C1-1{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-C-1 .C1-2{
+    display: flex;
+    flex-basis: 5%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-C-1 .C1-3{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-C-1 .C1-4{
+    display: flex;
+    flex-basis: 51%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+/* CENTRE ROW-2  */
+.C-C-1 .C2-1{
+    display: flex;
+    flex-basis: 25%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-C-1 .C2-2{
+    display: flex;
+    flex-basis: 16%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-C-1 .C2-3{
+    display: flex;
+    flex-basis: 3%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-C-1 .C2-4{
+    display: flex;
+    flex-basis: 54%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+/* CENTRE ROW-3  */
+.C-C-1 .C3-1{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-C-1 .C3-2{
+    display: flex;
+    flex-basis: 2%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-C-1 .C3-3{
+    display: flex;
+    flex-basis: 20%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+
+/* SPACE-AROUND  */
+.column .C-SA-3{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    min-height: 300px;
+    border: 1px dashed #545454ce;
+    justify-content: space-around;
+}
+/* FOR BORDER PURPOSE  */
+.C-SA-3 .SA-bd{
+    display: flex;
+    flex-direction: row;
+    min-height: 50px;
+    border: 1px solid #ea6666;
+    /* margin-bottom: 20px; */
+    gap: 20px;
+}
+/* SPACE-AROUND ROW-1  */
+.C-SA-3 .SA1-1{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-SA-3 .SA1-2{
+    display: flex;
+    flex-basis: 5%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-SA-3 .SA1-3{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-SA-3 .SA1-4{
+    display: flex;
+    flex-basis: 51%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+/* SPACE-AROUND ROW-2  */
+.C-SA-3 .SA2-1{
+    display: flex;
+    flex-basis: 25%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-SA-3 .SA2-2{
+    display: flex;
+    flex-basis: 16%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-SA-3 .SA2-3{
+    display: flex;
+    flex-basis: 3%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-SA-3 .SA2-4{
+    display: flex;
+    flex-basis: 54%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+/* SPACE-AROUND ROW-3  */
+.C-SA-3 .SA3-1{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-SA-3 .SA3-2{
+    display: flex;
+    flex-basis: 2%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.C-SA-3 .SA3-3{
+    display: flex;
+    flex-basis: 20%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+/* Column-left side complete here  */
+
+/* COLUMN right side star from here  */
+/* COLUMN-1  */
+
+.wrapper .column1{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    border: 1px solid #7d7c7c38;
+    padding: 10px;
+    min-height: 1000px;
+    margin: 10px;
+    gap: 20px;
+}
+/* LABLE  */
+.column1 label{
+    display:flex;
+    font-size: 18px;
+    font-weight:480;
+    color: rgb(38, 53, 63);
+}
+
+/* FLEX-END  */
+.column1 .F-E{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    min-height: 300px;
+    border: 1px dashed #545454ce;
+    justify-content: flex-end;
+}
+
+
+.F-E .F-E-bd{
+    display: flex;
+    flex-direction: row;
+    min-height: 50px;
+    border: 1px solid #ea6666;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+/* FLEX-END ROW-1  */
+.F-E .FE1-1{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.F-E .FE1-2{
+    display: flex;
+    flex-basis: 5%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.F-E .FE1-3{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.F-E .FE1-4{
+    display: flex;
+    flex-basis: 51%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+/* FLEX-END ROW-2  */
+.F-E .FE2-1{
+    display: flex;
+    flex-basis: 25%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.F-E .FE2-2{
+    display: flex;
+    flex-basis: 16%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.F-E .FE2-3{
+    display: flex;
+    flex-basis: 3%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.F-E .FE2-4{
+    display: flex;
+    flex-basis: 54%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+/* FLEX-END ROW-3  */
+.F-E .FE3-1{
+    display: flex;
+    flex-basis: 25%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.F-E .FE3-2{
+    display: flex;
+    flex-basis: 2%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.F-E .FE3-3{
+    display: flex;
+    flex-basis: 20%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+
+
+ /* STRETCH START HERE  */
+.column1 .STR{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    min-height: 300px;
+    border: 1px dashed #545454ce;
+    gap: 20px;
+   justify-content: stretch;
+}
+.STR .STR-bd{
+    display: flex;
+    flex-direction: row;
+    min-height: 50px;
+    border: 1px solid #ea6666;
+    gap: 20px;
+}
+/* STRETCH ROW-1  */
+.STR .STR1-1{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.STR .STR1-2{
+    display: flex;
+    flex-basis: 25%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.STR .STR1-3{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.STR .STR1-4{
+    display: flex;
+    flex-basis: 51%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+/* STRETCH ROW-2  */
+.STR .STR2-1{
+    display: flex;
+    flex-basis: 25%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.STR .STR2-2{
+    display: flex;
+    flex-basis: 16%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.STR .STR2-3{
+    display: flex;
+    flex-basis: 3%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.STR .STR2-4{
+    display: flex;
+    flex-basis: 54%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+/* STRETCH ROW-3  */
+.STR .STR3-1{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.STR .STR3-2{
+    display: flex;
+    flex-basis: 3%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.STR .STR3-3{
+    display: flex;
+    flex-basis: 20%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+
+/* SPACE BETWEEN START HERE  */
+.column1 .SP{
+
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    min-height: 300px;
+    border: 1px dashed #545454ce;
+    justify-content: space-between;
+}
+.SP .SP-bd{
+    display: flex;
+    flex-direction: row;
+    min-height: 50px;
+    border: 1px solid #ea6666;
+    gap: 20px;
+}
+
+/* STRETCH ROW-1  */
+.SP .SP1-1{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.SP .SP1-2{
+    display: flex;
+    flex-basis: 25%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.SP .SP1-3{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.SP .SP1-4{
+    display: flex;
+    flex-basis: 51%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+/* STRETCH ROW-2  */
+.SP .SP2-1{
+    display: flex;
+    flex-basis: 25%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.SP .SP2-2{
+    display: flex;
+    flex-basis: 16%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.SP .SP2-3{
+    display: flex;
+    flex-basis: 3%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.SP .SP2-4{
+    display: flex;
+    flex-basis: 54%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+
+/* STRETCH ROW-3  */
+.SP .SP3-1{
+    display: flex;
+    flex-basis: 22%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.SP .SP3-2{
+    display: flex;
+    flex-basis: 3%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
+.SP .SP3-3{
+    display: flex;
+    flex-basis: 20%;
+    background-color: rgba(0, 60, 255, 0.918);
+}
