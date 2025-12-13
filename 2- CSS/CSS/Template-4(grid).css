@@ -1,0 +1,535 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    /* background-color: aqua; */
+}
+
+.box {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #3E4653;
+    border: 1px solid #000;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas: "Box-1 Box-2 Box-3 Box-4 Box-5 Box-6"
+        "Box-7 Box-8 Box-9 Box-10 Box-11 Box-12"
+        "Box-13 Box-14 Box-15 Box-16 Box-17 Box-18"
+        "Box-19 Box-20 Box-21 Box-22 Box-23 Box-24";
+    gap: 20px;
+
+}
+
+.outer {
+
+    border: 1px solid #000000;
+}
+
+/* Box-1 starts from here  */
+.Box-1 {
+    grid-area: Box-1;
+    display: grid;
+    grid-template-columns: 67px 67px 67px;
+    grid-template-rows: 60px 60px 60px;
+
+    grid-template-areas: "Box-1-1 Box-1-2 Box-1-2"
+        "Box-1-3 Box-1-3 Box-1-4"
+        "Box-1-5 Box-1-6 Box-1-6";
+
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+}
+
+.box1 {
+    background-image: url(../Images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Box-1 .Box-1-1 {
+
+    grid-area: Box-1-1;
+    border: 1px solid #fffbfb;
+}
+
+.Box-1 .Box-1-2 {
+
+    grid-area: Box-1-2;
+    border: 1px solid #fffbfb;
+}
+
+.Box-1 .Box-1-3 {
+    grid-area: Box-1-3;
+    border: 1px solid #fffbfb;
+}
+
+.Box-1 .Box-1-4 {
+    grid-area: Box-1-4;
+    border: 1px solid #fffbfb;
+}
+
+.Box-1 .Box-1-5 {
+    grid-area: Box-1-5;
+    border: 1px solid #fffbfb;
+}
+
+.Box-1 .Box-1-6 {
+    grid-area: Box-1-6;
+    border: 1px solid #fffbfb;
+}
+
+
+/* Box-2 start from here  */
+.Box-2 {
+    grid-area: Box-2;
+
+    display: grid;
+    grid-template-columns: 67px 67px 67px;
+    grid-template-rows: 60px 60px 60px;
+    grid-template-areas: "Box-2-1 Box-2-2 Box-2-3"
+        "Box-2-4 Box-2-2 Box-2-6"
+        "Box-2-4 Box-2-5 Box-2-6";
+
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.box2 {
+    background-image: url(../Images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #fffafa;
+}
+
+.Box-2 .Box-2-1 {
+    grid-area: Box-2-1;
+}
+
+.Box-2 .Box-2-2 {
+    grid-area: Box-2-2;
+}
+
+.Box-2 .Box-2-3 {
+    grid-area: Box-2-3;
+}
+
+.Box-2 .Box-2-4 {
+    grid-area: Box-2-4;
+}
+
+.Box-2 .Box-2-5 {
+    grid-area: Box-2-5;
+}
+
+.Box-2 .Box-2-6 {
+    grid-area: Box-2-6;
+}
+
+
+/* Box-3 start from here  */
+.Box-3 {
+    grid-area: Box-3;
+
+    display: grid;
+    grid-template-columns: 67px 67px 67px;
+    grid-template-rows: 60px 60px 60px;
+    grid-template-areas: "Box-3-1 Box-3-1 Box-3-2"
+        "Box-3-1 Box-3-1 Box-3-3"
+        "Box-3-4 Box-3-5 Box-3-6";
+
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+}
+
+.box3 {
+    background-image: url(../Images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #fffafa;
+}
+
+.Box-3 .Box-3-1 {
+    grid-area: Box-3-1;
+}
+
+.Box-3 .Box-3-2 {
+    grid-area: Box-3-2;
+}
+
+.Box-3 .Box-3-3 {
+    grid-area: Box-3-3;
+}
+
+.Box-3 .Box-3-4 {
+    grid-area: Box-3-4;
+}
+
+.Box-3 .Box-3-5 {
+    grid-area: Box-3-5;
+}
+
+.Box-3 .Box-3-6 {
+    grid-area: Box-3-6;
+}
+
+
+/* Box-4 start from here  */
+.Box-4 {
+    grid-area: Box-4;
+
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px;
+    grid-template-rows: 43px 43px 43px 43px;
+    grid-template-areas: "Box-4-1 Box-4-1 Box-4-2 Box-4-3 Box-4-3"
+        "Box-4-4 Box-4-5 Box-4-5 Box-4-5 Box-4-6"
+        "Box-4-7 Box-4-5 Box-4-5 Box-4-5 Box-4-8"
+        "Box-4-9 Box-4-9 Box-4-10 Box-4-11 Box-4-11";
+
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+}
+
+.box4 {
+    background-image: url(../Images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #fffafa;
+}
+
+.Box-4 .Box-4-1 {
+    grid-area: Box-4-1;
+}
+
+.Box-4 .Box-4-2 {
+    grid-area: Box-4-2;
+}
+
+.Box-4 .Box-4-3 {
+    grid-area: Box-4-3;
+}
+
+.Box-4 .Box-4-4 {
+    grid-area: Box-4-4;
+}
+
+.Box-4 .Box-4-5 {
+    grid-area: Box-4-5;
+}
+
+.Box-4 .Box-4-6 {
+    grid-area: Box-4-6;
+}
+
+.Box-4 .Box-4-7 {
+    grid-area: Box-4-7;
+}
+
+.Box-4 .Box-4-8 {
+    grid-area: Box-4-8;
+}
+
+.Box-4 .Box-4-9 {
+    grid-area: Box-4-9;
+}
+
+.Box-4 .Box-4-10 {
+    grid-area: Box-4-10;
+}
+
+.Box-4 .Box-4-11 {
+    grid-area: Box-4-11;
+}
+
+/* Box-5 start from here  */
+.Box-5 {
+    grid-area: Box-5;
+
+    display: grid;
+    /* grid-template-columns: 29px 29px 29px 29px 29px 29px; */
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 26px 26px 26px 26px 26px 26px;
+    grid-template-areas: "Box-5-1 Box-5-1 Box-5-2 Box-5-2 Box-5-2 Box-5-2"
+        "Box-5-1 Box-5-1 Box-5-2 Box-5-2 Box-5-2 Box-5-2"
+        "Box-5-3 Box-5-3 Box-5-4 Box-5-5 Box-5-8 Box-5-8"
+        "Box-5-3 Box-5-3 Box-5-6 Box-5-7 Box-5-8 Box-5-8"
+        "Box-5-9 Box-5-9 Box-5-9 Box-5-9 Box-5-10 Box-5-10"
+        "Box-5-9 Box-5-9 Box-5-9 Box-5-9 Box-5-10 Box-5-10";
+
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+}
+
+.box5 {
+    background-image: url(../Images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #fffafa;
+}
+
+.Box-5 .Box-5-1 {
+    grid-area: Box-5-1;
+}
+
+.Box-5 .Box-5-2 {
+    grid-area: Box-5-2;
+}
+
+.Box-5 .Box-5-3 {
+    grid-area: Box-5-3;
+}
+
+.Box-5 .Box-5-4 {
+    grid-area: Box-5-4;
+}
+
+.Box-5 .Box-5-5 {
+    grid-area: Box-5-5;
+}
+
+.Box-5 .Box-5-6 {
+    grid-area: Box-5-6;
+}
+
+.Box-5 .Box-5-7 {
+    grid-area: Box-5-7;
+}
+
+.Box-5 .Box-5-8 {
+    grid-area: Box-5-8;
+}
+
+.Box-5 .Box-5-9 {
+    grid-area: Box-5-9;
+}
+
+.Box-5 .Box-5-10 {
+    grid-area: Box-5-10;
+}
+
+
+/* Box-6 start from here  */
+.Box-6 {
+    grid-area: Box-6;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 36px 110px 36px;
+    grid-template-areas: "Box-5-1 Box-5-2 Box-5-3"
+        "Box-5-4 Box-5-4 Box-5-4"
+        "Box-5-5 Box-5-6 Box-5-7";
+
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.box6 {
+    background-image: url(../Images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #fffafa;
+}
+
+.Box-6 .Box-5-1 {
+    grid-area: Box-5-1;
+}
+
+.Box-6 .Box-5-2 {
+    grid-area: Box-5-2;
+}
+
+.Box-6 .Box-5-3 {
+    grid-area: Box-5-3;
+}
+
+.Box-6 .Box-5-4 {
+    grid-area: Box-5-4;
+}
+
+.Box-6 .Box-5-5 {
+    grid-area: Box-5-5;
+}
+
+.Box-6 .Box-5-6 {
+    grid-area: Box-5-6;
+}
+
+.Box-6 .Box-5-7 {
+    grid-area: Box-5-7;
+}
+
+
+/* Box-7 start from here  */
+.Box-7 {
+    grid-area: Box-7;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 43px 43px 43px 43px;
+    grid-template-areas: "Box-7-1 Box-7-1 Box-7-1 Box-7-1 Box-7-1 Box-7-1"
+        "Box-7-1 Box-7-1 Box-7-1 Box-7-1 Box-7-1 Box-7-1"
+        "Box-7-2 Box-7-3 Box-7-4 Box-7-4 Box-7-5 Box-7-5"
+        "Box-7-6 Box-7-6 Box-7-4 Box-7-4 Box-7-5 Box-7-5";
+
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.box7 {
+    background-image: url(../Images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #fffafa;
+}
+
+.Box-7 .Box-7-1 {
+    grid-area: Box-7-1;
+}
+
+.Box-7 .Box-7-2 {
+    grid-area: Box-7-2;
+}
+
+.Box-7 .Box-7-3 {
+    grid-area: Box-7-3;
+}
+
+.Box-7 .Box-7-4 {
+    grid-area: Box-7-4;
+}
+
+.Box-7 .Box-7-5 {
+    grid-area: Box-7-5;
+}
+
+.Box-7 .Box-7-6 {
+    grid-area: Box-7-6;
+}
+
+/* Box-8 start from here  */
+.Box-8 {
+    grid-area: Box-8;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 43px 43px 43px 43px;
+    grid-template-areas: "Box-8-1 Box-8-1 Box-8-1 Box-8-2"
+        "Box-8-1 Box-8-1 Box-8-1 Box-8-3"
+        "Box-8-4 Box-8-5 Box-8-5 Box-8-5"
+        "Box-8-6 Box-8-5 Box-8-5 Box-8-5";
+
+    gap: 8px;
+    justify-content: center;
+    align-content: center;
+}
+
+.box8 {
+    background-image: url(../Images/sky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid #fffafa;
+}
+
+.Box-8 .Box-8-1 {
+    grid-area: Box-8-1;
+}
+
+.Box-8 .Box-8-2 {
+    grid-area: Box-8-2;
+}
+
+.Box-8 .Box-8-3 {
+    grid-area: Box-8-3;
+}
+
+.Box-8 .Box-8-4 {
+    grid-area: Box-8-4;
+}
+
+.Box-8 .Box-8-5 {
+    grid-area: Box-8-5;
+}
+
+.Box-8 .Box-8-6 {
+    grid-area: Box-8-6;
+}
+
+
+
+/* Box-9 start from here  */
+.Box-9 {
+    grid-area: Box-9;
+}
+
+/* Box-10 start from here  */
+.Box-10 {
+    grid-area: Box-10;
+}
+
+.Box-11 {
+    grid-area: Box-11;
+}
+
+.Box-12 {
+    grid-area: Box-12;
+}
+
+.Box-13 {
+    grid-area: Box-13;
+}
+
+.Box-14 {
+    grid-area: Box-14;
+}
+
+.Box-15 {
+    grid-area: Box-15;
+}
+
+.Box-16 {
+    grid-area: Box-16;
+}
+
+.Box-17 {
+    grid-area: Box-17;
+}
+
+.Box-18 {
+    grid-area: Box-18;
+}
+
+.Box-19 {
+    grid-area: Box-19;
+}
+
+.Box-20 {
+    grid-area: Box-20;
+}
+
+.Box-21 {
+    grid-area: Box-21;
+}
+
+.Box-22 {
+    grid-area: Box-22;
+}
+
+.Box-23 {
+    grid-area: Box-23;
+}
+
+.Box-24 {
+    grid-area: Box-24;
+}
