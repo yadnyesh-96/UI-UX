@@ -14,11 +14,29 @@
     flex-direction: column;
     gap: 20px;
 }
+
+/* sections-1 design here  */
 .section-1{
     width: 100%;
-    min-height: 750px;
+    min-height: 700px;
     border: 1px solid #fd4f4f;
+    padding: 5px;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 350px 350px;
+    gap: 20px;
 }
+.box-1{ border: 1px solid #000;}
+.box-2{ border: 1px solid #000;}
+.box-3{ border: 1px solid #000;}
+.box-4{ border: 1px solid #000;}
+.box-5{ border: 1px solid #000;}
+.box-6{ border: 1px solid #000;}
+.box-7{ border: 1px solid #000;}
+.box-8{ border: 1px solid #000;}
+
+
 .section-2{
     width: 100%;
     min-height: 750px;
@@ -28,4 +46,19 @@
     width: 100%;
     min-height: 750px;
     border: 1px solid #8402ff;
+}
+
+
+
+/* media quireies  */
+@media only screen and (max-width:490px){
+    .container{
+        width: 100%;
+    }
+    .section-1{
+
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+    }
 }
