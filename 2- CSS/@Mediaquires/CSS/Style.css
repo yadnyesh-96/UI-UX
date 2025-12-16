@@ -35,7 +35,26 @@
     grid-area: box-1;
     background-color: #6A4DBC;
     border-radius: 40px;
+    padding: 20px;
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: column-reverse;
     /* border: 1px solid #000; */
+}
+
+.box-1 button {
+    width: 50%;
+    padding: 8px 10px;
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid #ffffff;
+}
+
+.box-1 a {
+    text-decoration: none;
+    font-size: 2vh;
+    font-weight: bold;
+    color: #001F3D;
 }
 
 .box-2 {
@@ -147,7 +166,7 @@
     }
 
     .section-1 .box-5 h1 {
-       
+
         font-weight: bolder;
         font-size: 4vh;
         color: #535353;
@@ -166,5 +185,26 @@
         text-align: left;
         width: 95%;
         font-size: 2vh;
+    }
+
+    /* box-1 here  */
+    .section-1 .box-1 {
+
+        border-radius: 20px;
+    }
+
+    .section-1 .box-1 button {
+        width: 60%;
+        padding: 1px;
+        border-radius: 25px;
+        background-color: white;
+        border: 1px solid #ffffff;
+    }
+
+    .section-1 .box-1 a {
+        text-decoration: none;
+        font-size: 2.5vh;
+        font-weight: bold;
+        color: #001F3D;
     }
 }
