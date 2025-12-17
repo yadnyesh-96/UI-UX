@@ -45,7 +45,6 @@
     width: 100%;
     height: 190px;
     margin-bottom: 10px;
-    border: 1px solid #f8f7f7;
     display: grid;
 
     grid-template-columns: repeat(3,1fr);
@@ -56,9 +55,11 @@
     align-items: center;
 }
 .text .heading{
-    text-align: center;
-    border: 1px solid #000;
     grid-area: heading;
+    border-radius: 7px;
+    text-align: center;
+    background-color: white;
+    color: #3778EB;
 }
 .text .Line{
     text-align: center;
@@ -72,6 +73,7 @@
 }
 .text .Decs a{
     color: white;
+    text-decoration:underline;
 }
 .box-1 button {
     width: 55%;
