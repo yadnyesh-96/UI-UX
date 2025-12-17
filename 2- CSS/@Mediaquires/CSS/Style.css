@@ -25,7 +25,7 @@
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 350px 350px;
+    grid-template-rows: 250px 250px;
     grid-template-areas: "box-1 box-5 box-4 box-6"
         "box-3 box-7 box-2 box-8";
     gap: 30px;
@@ -43,11 +43,17 @@
 }
 
 .box-1 button {
-    width: 50%;
-    padding: 8px 10px;
+    width: 55%;
+    padding: 5px 0px;
     border-radius: 25px;
     background-color: white;
     border: 1px solid #ffffff;
+}
+
+.box-1 button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 13px 2px rgb(255, 255, 255);
+    border: 0.1px solid #0000006d;
 }
 
 .box-1 a {
@@ -194,8 +200,8 @@
     }
 
     .section-1 .box-1 button {
-        width: 60%;
-        padding: 1px;
+        width: 65%;
+        padding: 1px 2px;
         border-radius: 25px;
         background-color: white;
         border: 1px solid #ffffff;
