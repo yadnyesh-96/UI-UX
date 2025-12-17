@@ -46,6 +46,32 @@
     height: 190px;
     margin-bottom: 10px;
     border: 1px solid #f8f7f7;
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 30px 140px;
+    grid-template-areas: "heading Line-1 Line-1"
+    "Decs Decs Decs";
+
+    align-items: center;
+}
+.text .heading{
+    text-align: center;
+    border: 1px solid #000;
+    grid-area: heading;
+}
+.text .Line{
+    text-align: center;
+    color: white;
+    grid-area: Line-1;
+}
+.text .Decs{
+    color: white;
+   
+    grid-area: Decs;
+}
+.text .Decs a{
+    color: white;
 }
 .box-1 button {
     width: 55%;
