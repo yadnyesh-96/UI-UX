@@ -37,11 +37,16 @@
     border-radius: 40px;
     padding: 20px;
     display: flex;
-    /* flex-direction: column; */
-    flex-direction: column-reverse;
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
     /* border: 1px solid #000; */
 }
-
+.box-1 .text{
+    width: 100%;
+    height: 190px;
+    margin-bottom: 10px;
+    border: 1px solid #f8f7f7;
+}
 .box-1 button {
     width: 55%;
     padding: 5px 0px;
