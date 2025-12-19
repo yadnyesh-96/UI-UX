@@ -132,7 +132,10 @@
     /* border: 1px solid #000; */
     /* background-color: #2700eb; */
     display: flex;
-    background-image: cross-fade(rgba(72, 69, 69, 0.326)) url(./Imgaes/duo-1.jpeg);
+    background:
+      linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+      url("./Imgaes/duo-1.jpeg");
+    /* background-image: url(./Imgaes/duo-1.jpeg); */
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -162,11 +165,13 @@
 }
 
 .lines h1 {
+    color: white;
     font-size: 50px;
     background-color: transparent;
 }
 
 .area-1 .para {
+    color: white;
     width: 100%;
     height: 150px;
     /* border: 1px solid #000; */
@@ -177,6 +182,7 @@
 }
 
 .para p {
+    color: white;
     background-color: transparent;
     text-align: start;
 }
@@ -202,19 +208,19 @@
     width: 27%;
     padding: 5px;
     border-radius: 20px;
-    background-color: black;
+    background-color:  white;
 }
 
 .explore button:hover {
     cursor: pointer;
-    border: 1px solid #e76d09;
-    box-shadow: 0px 0px 8px rgba(47, 46, 46, 0.4);
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 12px 8px rgba(215, 213, 213, 0.6);
 }
 
 .explore button a {
     font-size: 14px;
     letter-spacing: 2px;
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     background-color: transparent;
 }
@@ -499,33 +505,42 @@
     text-align: center;
     align-content: center;
 }
-.S-5 img{
+
+.S-5 img {
     width: 20%;
     margin-bottom: 10px;
 }
-.S-5 h3{
+
+.S-5 h3 {
     margin-bottom: 10px;
     color: rgb(54, 54, 54);
 }
-.S-5 p{
+
+.S-5 p {
     color: rgb(104, 104, 104);
-    text-align:inherit;
+    text-align: inherit;
     font-size: 13px;
 }
+
 .sec5 .SR-1 {
     grid-area: SR-1;
-    
+
 }
-.SR-1 h2{
-    margin-bottom: 10px;}
-.SR-1 h5{
+
+.SR-1 h2 {
+    margin-bottom: 10px;
+}
+
+.SR-1 h5 {
     color: rgb(104, 104, 104);
     font-weight: lighter;
 }
+
 .sec5 .SR-2 {
     grid-area: SR-2;
-    
+
 }
+
 .sec5 .SR-3 {
     grid-area: SR-3;
 }
@@ -549,12 +564,14 @@
 .sec5 .SR-8 {
     grid-area: SR-8;
 }
+
 .SR-8 button {
     width: 15%;
     padding: 2px;
     background-color: white;
     border: 1px solid #00000080;
 }
+
 .SR-8 button:hover {
     cursor: pointer;
     border: 1px solid #c25100;
@@ -569,11 +586,104 @@
     background-color: transparent;
 }
 
+
 .sec6 {
     width: 100%;
     min-height: 490px;
-    border: 1px solid #2700eb;
+    /* border: 1px solid #2700eb; */
+    display: flex;
+
 }
+
+.sec6 .c-1 {
+    width: 50%;
+    height: 490px;
+    /* border: 1px solid #000; */
+}
+
+.c-1 img {
+    width: 100%;
+    height: 490px;
+}
+
+.sec6 .c-2 {
+    width: 50%;
+    height: 490px;
+    background-color: #F1F1F1;
+    /* border: 1px solid #000; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    gap: 5px;
+
+}
+
+.sec6 .c-2 .C-21 {
+    width: 85%;
+    height: 150px;
+    /* border: 1px solid #000; */
+    background-color: transparent;
+}
+
+.sec6 .c-2 .C-22 {
+    width: 85%;
+    height: 250px;
+    padding: 15px 0px 0px 0px;
+    /* border: 1px solid #000; */
+    background-color: transparent;
+}
+
+.sec6 .C-21 h1 {
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+}
+
+.sec6 .C-22 .p1 {
+    color: rgb(0, 0, 0);
+    margin-bottom: 15px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.sec6 .C-22 p {
+    color: rgb(0, 0, 0);
+    font-size: 13px;
+    background-color: transparent;
+}
+
+ .sec6 .c-2 .C-23 {
+    width: 85%;
+    height: 100px;
+    /* border: 1px solid #000; */
+    background-color: transparent;
+
+    align-content: center;
+}
+
+.sec6 .C-23 button {
+    width: 30%;
+    padding: 1px;
+    border-radius: 25px;
+    background-color: #37D2D7;
+    border: 1px solid #00000080;
+}
+
+.sec6 .C-23 button:hover {
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    box-shadow: 0px 0px 12px 8px rgba(98, 235, 237, 0.2);
+}
+
+.sec6 .C-23 a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 16px;
+    background-color: transparent;
+}
+
 
 .footer {
     width: 100%;
