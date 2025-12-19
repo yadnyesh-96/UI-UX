@@ -323,7 +323,8 @@
     align-content: center;
     text-align: center;
 }
-.head-line h1{
+
+.head-line h1 {
     font-size: 25px;
     /* letter-spacing: 2px; */
     font-family: Arial, Helvetica, sans-serif;
@@ -338,11 +339,12 @@
     align-content: center;
     text-align: center;
 }
-.desc p{
+
+.desc p {
     font-size: 14px;
     /* letter-spacing: 2px; */
     font-family: Arial, Helvetica, sans-serif;
-    text-align:inherit;
+    text-align: inherit;
 }
 
 .sec3 .btn-s {
@@ -352,64 +354,213 @@
     align-content: center;
     text-align: center;
 }
-.btn-s button{
+
+.btn-s button {
     width: 17%;
     padding: 5px;
-    border-radius: 2px;
+    border-radius: 0px;
+    border: 1px solid #000000;
 }
-.btn-s a{
+
+.btn-s a {
     font-size: 18px;
     text-decoration: none;
     color: black;
     letter-spacing: 1px;
 }
 
+.btn-s button:hover {
+    cursor: pointer;
+    border: 1px solid #17B4BB;
+    box-shadow: 0px 0px 12px 5px rgba(100, 84, 84, 0.2);
+}
+
 .sec4 {
     width: 100%;
     min-height: 490px;
     /* border: 1px solid #2700eb; */
-
     display: flex;
-    
+
 }
-.sec4 .c-1{
+
+.sec4 .c-1 {
     width: 50%;
     height: 490px;
     /* border: 1px solid #000; */
 }
-.c-1 img{
+
+.c-1 img {
     width: 100%;
 }
-.sec4 .c-2{
+
+.sec4 .c-2 {
     width: 50%;
     height: 490px;
-    border: 1px solid #000;
-    
+    background-color: #37D2D7;
+    /* border: 1px solid #000; */
+    padding: 30px;
     display: flex;
     flex-direction: column;
 
+    align-items: center;
+    gap: 5px;
 
 }
-.c-2 .C-21{
-    width: 80%;
+
+.c-2 .C-21 {
+    width: 85%;
     height: 150px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+    background-color: transparent;
 }
-.c-2 .C-22{
-    width: 80%;
+
+.c-2 .C-22 {
+    width: 85%;
     height: 250px;
-    border: 1px solid #000;
+    padding: 15px 0px 0px 0px;
+    /* border: 1px solid #000; */
+    background-color: transparent;
 }
-.c-2 .C-23{
-    width: 80%;
-    height: 100%;
-    border: 1px solid #000;
+
+.C-21 h1 {
+    color: white;
+    background-color: transparent;
+}
+
+.C-22 .p1 {
+    color: white;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+
+.C-22 p {
+    color: white;
+    font-size: 13px;
+    background-color: transparent;
+}
+
+.c-2 .C-23 {
+    width: 85%;
+    height: 100px;
+    /* border: 1px solid #000; */
+    background-color: transparent;
+
+    align-content: center;
+}
+
+.C-23 button {
+    width: 30%;
+    padding: 1px;
+    border-radius: 25px;
+    background-color: white;
+    border: 1px solid #00000080;
+}
+
+.C-23 button:hover {
+    cursor: pointer;
+    border: 1px solid #c25100;
+    box-shadow: 0px 0px 12px 8px rgba(94, 94, 94, 0.2);
+}
+
+.C-23 a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #37D2D7;
+    font-size: 16px;
+    background-color: transparent;
 }
 
 .sec5 {
     width: 100%;
-    min-height: 680px;
-    border: 1px solid #ff0000;
+    min-height: 640px;
+    /* border: 1px solid #ff0000; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 80px 250px 250px 60px;
+    grid-template-areas: "SR-1 SR-1 SR-1"
+        "SR-2 SR-3 SR-4"
+        "SR-5 SR-6 SR-7"
+        "SR-8 SR-8 SR-8";
+
+
+}
+
+.sec5 .S-5 {
+    padding: 0px 35px 0px 35px;
+    /* border: 1px solid #000; */
+    text-align: center;
+    align-content: center;
+}
+.S-5 img{
+    width: 20%;
+    margin-bottom: 10px;
+}
+.S-5 h3{
+    margin-bottom: 10px;
+    color: rgb(54, 54, 54);
+}
+.S-5 p{
+    color: rgb(104, 104, 104);
+    text-align:inherit;
+    font-size: 13px;
+}
+.sec5 .SR-1 {
+    grid-area: SR-1;
+    
+}
+.SR-1 h2{
+    margin-bottom: 10px;}
+.SR-1 h5{
+    color: rgb(104, 104, 104);
+    font-weight: lighter;
+}
+.sec5 .SR-2 {
+    grid-area: SR-2;
+    
+}
+.sec5 .SR-3 {
+    grid-area: SR-3;
+}
+
+.sec5 .SR-4 {
+    grid-area: SR-4;
+}
+
+.sec5 .SR-5 {
+    grid-area: SR-5;
+}
+
+.sec5 .SR-6 {
+    grid-area: SR-6;
+}
+
+.sec5 .SR-7 {
+    grid-area: SR-7;
+}
+
+.sec5 .SR-8 {
+    grid-area: SR-8;
+}
+.SR-8 button {
+    width: 15%;
+    padding: 2px;
+    background-color: white;
+    border: 1px solid #00000080;
+}
+.SR-8 button:hover {
+    cursor: pointer;
+    border: 1px solid #c25100;
+    box-shadow: 0px 0px 8px 2px rgba(61, 75, 182, 0.2);
+}
+
+.SR-8 a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #000000;
+    font-size: 16px;
+    background-color: transparent;
 }
 
 .sec6 {
