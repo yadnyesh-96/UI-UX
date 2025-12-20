@@ -39,11 +39,26 @@
 .section-1 .header {
     height: 70px;
     border: 1px solid #ffffff;
+
+    display: flex;
+    justify-content: flex-end;
+}
+.header .logo{
+    width: 25%;
+    border: 1px solid #dc0000;
+}
+.header .menu{
+    width: 49%;  
+    border: 1px solid #ff0000;   
+}
+.header .btn-s{
+    width: 20%;
+    border: 1px solid #ff0000;
 }
 
 .section-1 .content {
     height: 580px;
-    border: 1px solid #fc0000;
+    /* border: 1px solid #fc0000; */
     padding: 4rem;
 }
 
@@ -99,8 +114,20 @@
 
 
 @media only screen and (max-width:768px) {
-    
+    .container{
+        width: 100%;
+    }
+    .container .content h1{
+        font-size: 3rem;
+    }
 }
 
 
-@media only screen and (max-width:490px) {}
+@media only screen and (max-width:490px) {
+     .container{
+        width: 100%;
+    }
+    .container .content h1{
+        font-size: 2.7rem;
+    }
+}
