@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -7,69 +7,74 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container{
+.container {
     width: 80%;
     margin: auto;
     border: 1px solid #000;
 }
-.container .S{
+
+.container .S {
     width: 100%;
     min-height: 100vh;
     border: 1px solid #000;
 }
 
-.section-1{
+.section-1 {
     /* background: url(../Images/duo-1.jpeg);
     background-repeat: no-repeat;
     background-size: cover; */
-    width:100%;
+    width: 100%;
     background-image:
-    linear-gradient(to left, rgba(255, 255, 255, 0) 50%, rgb(0, 0, 0) 100%),
-    url('../Images/duo-1.jpeg');
-    
+        linear-gradient(to left, rgba(255, 255, 255, 0) 50%, rgb(0, 0, 0) 100%),
+        url('../Images/duo-1.jpeg');
+
 
     background-size: cover;
-    background-position: center;   
-    
+    background-position: center;
+
     display: flex;
     flex-direction: column;
 }
 
-.section-1 .header{
+.section-1 .header {
     height: 70px;
     border: 1px solid #ffffff;
 }
 
-.section-1 .content{
+.section-1 .content {
     height: 580px;
     border: 1px solid #fc0000;
     padding: 4rem;
 }
-.content h1{
+
+.content h1 {
     font-size: 3.5rem;
     color: white;
     letter-spacing: 2px;
 }
-.content p{
+
+.content p {
     max-width: 500px;
     font-size: 1rem;
     margin-top: 10px;
     color: white;
     font-weight: 300;
 }
-.content h5{
+
+.content h5 {
     font-size: 1remvw;
     color: white;
     font-weight: lighter;
 }
-.content h5 a{
+
+.content h5 a {
     text-decoration: none;
     font-size: 1rem;
     color: aqua;
     font-weight: bold;
 }
 
-.content button{
+.content button {
     margin-top: 20px;
     padding: 10px 30px;
     /* width: 15%; */
@@ -79,22 +84,23 @@
     border: 1px solid #fffefe;
     transition: 0.3s ease-in-out;
 }
-.content button:hover{
+
+.content button:hover {
     cursor: pointer;
     border: 2px solid #fffdfd;
     box-shadow: 0px 0px 16px rgb(192, 192, 192, 0.8);
 }
-.content button a{
+
+.content button a {
     text-decoration: none;
     color: white;
     letter-spacing: 2px;
 }
 
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:768px) {
     
 }
 
-@media only screen and (max-width:490px){
-    
-}
+
+@media only screen and (max-width:490px) {}
