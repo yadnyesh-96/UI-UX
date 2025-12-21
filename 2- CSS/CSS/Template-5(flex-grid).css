@@ -173,16 +173,25 @@
     /* border: 1px solid #ff1111; */
     align-content: center;
     text-align: center;
+    padding: 30px;
 }
 .s-1 img{
     width: 25%;
 }
 .s-1 h3{
+    margin-top: 10px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .s-1 p{
+    margin-top: 10px;
     color: white;
+    text-align: inherit;
+}
+.s-1 a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
 .section-2 .S2-Box1 {
     background-color: #db834d;
