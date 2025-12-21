@@ -175,24 +175,29 @@
     text-align: center;
     padding: 30px;
 }
-.s-1 img{
+
+.s-1 img {
     width: 25%;
 }
-.s-1 h3{
+
+.s-1 h3 {
     margin-top: 10px;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.s-1 p{
+
+.s-1 p {
     margin-top: 10px;
     color: white;
     text-align: inherit;
 }
-.s-1 a{
+
+.s-1 a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
+
 .section-2 .S2-Box1 {
     background-color: #db834d;
 }
@@ -234,6 +239,24 @@
     .section-2 .s-1 {
         height: 45vh;
     }
+
+    .s-1 img {
+        width: 25%;
+    }
+
+    .s-1 h3 {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+
+    .s-1 p {
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .s-1 a {
+        font-size: 12px;
+    }
 }
 
 
@@ -263,6 +286,26 @@
     }
 
     .section-2 .s-1 {
-        height: 30vh;  
+        height: 30vh;
+    }
+    .s-1{
+        padding: 8px;    
+    }
+    .s-1 img {
+        width: 25%;
+    }
+
+    .s-1 h3 {
+        margin-top: 3px;
+        font-size: 12px;
+    }
+
+    .s-1 p {
+        margin-top: 3px;
+        font-size: 9px;
+    }
+
+    .s-1 a {
+        font-size: 9px;
     }
 }
