@@ -171,18 +171,25 @@
     width: 500px;
     height: 65vh;
     /* border: 1px solid #ff1111; */
+    align-content: center;
+    text-align: center;
 }
-
+.s-1 img{
+    width: 25%;
+}
+.s-1 h3{
+    color: white;
+}
 .section-2 .S2-Box1 {
-    background-color: #99D5DC;
+    background-color: #db834d;
 }
 
 .section-2 .S2-Box2 {
-    background-color: black;
+    background-color: #88aac2;
 }
 
 .section-2 .S2-Box3 {
-    background-color: #99D5DC;
+    background-color: #c1a74b;
 }
 
 @media only screen and (max-width:768px) {
