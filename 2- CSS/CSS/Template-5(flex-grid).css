@@ -45,7 +45,7 @@
 }
 .header .logo{
     width: 25%;
-    border: 1px solid #dc0000;
+    /* border: 1px solid #dc0000; */
     
     align-content: center;
 }
@@ -55,7 +55,7 @@
 }
 .header .menu{
     width: 49%;  
-    border: 1px solid #ff0000;  
+    /* border: 1px solid #ff0000;   */
     
     align-content: center;
 }
@@ -91,7 +91,7 @@
 }
 .header .btn-s{
     width: 20%;
-    border: 1px solid #ff0000;
+    /* border: 1px solid #ff0000; */
 }
 
 .section-1 .content {
@@ -153,7 +153,18 @@
 /* section 2 product statrt here  */
 .container .section-2{
     
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.section-2 .s-1{
+    width: 500px;
+    height: 65vh;
+    border: 1px solid #ff1111;
+}
+ .section-2 .S2-Box1{
+    
+ }
 
 @media only screen and (max-width:768px) {
     .container{
