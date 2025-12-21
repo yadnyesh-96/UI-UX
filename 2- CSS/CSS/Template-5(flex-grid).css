@@ -46,10 +46,48 @@
 .header .logo{
     width: 25%;
     border: 1px solid #dc0000;
+    
+    align-content: center;
+}
+.logo h3{
+    color: white;
+    font-size: 2.2rem;
 }
 .header .menu{
     width: 49%;  
-    border: 1px solid #ff0000;   
+    border: 1px solid #ff0000;  
+    
+    align-content: center;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu ul li{
+    width: 15%;
+    text-align: center;
+    
+    border-radius: 10px;
+    border: 1px solid #ddd9d9ac;
+    background-color: rgba(245, 245, 245, 0.295);
+}
+.menu ul li:hover{
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    box-shadow: 0px 0px 8px #fffdfd;
+}
+/* .menu ul li a:hover{
+    color: orangered;
+} */
+.menu ul li a{
+    padding-left: 2px;
+    padding-right: 2px;
+    text-decoration: none;
+    /* background-color: #fffdfd; */
+    color: #000000;
+    font-weight: bold;
+    /* border: 1px solid #000; */
 }
 .header .btn-s{
     width: 20%;
@@ -120,6 +158,14 @@
     .container .content h1{
         font-size: 3rem;
     }
+
+    .container .header h3{
+        font-size: 1.6rem;
+    }
+    .container .menu ul li { width: 17%;}
+    .container .menu ul li a{
+        font-size: 1.6vh;
+    }
 }
 
 
@@ -129,5 +175,13 @@
     }
     .container .content h1{
         font-size: 2.7rem;
+    }
+
+    .container .header h3{
+        font-size: 1.1rem
+    }
+    .container .menu ul li { width: 20%;}
+    .container .menu ul li a{
+        font-size: 10px;
     }
 }
