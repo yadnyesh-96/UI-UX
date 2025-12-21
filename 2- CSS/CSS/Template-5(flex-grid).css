@@ -181,6 +181,9 @@
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.s-1 p{
+    color: white;
+}
 .section-2 .S2-Box1 {
     background-color: #db834d;
 }
