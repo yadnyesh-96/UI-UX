@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container{
+.container {
     margin: auto;
     width: 80%;
     border: 1px solid #000;
@@ -13,30 +13,57 @@
     flex-direction: column;
 
 }
-.container .s{
+
+.container .s {
     min-height: 100vh;
     border: 1px solid #000;
 
 }
-.container .section-1{
+
+.container .section-1 {
     background-image:
         linear-gradient(to left, rgba(255, 255, 255, 0) 50%, rgb(0, 0, 0) 100%),
         url('../Images/duo-1.jpeg');
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center;
+    background-position: center;
 }
-.section-1 .header{
-    border: 1px solid #fffdfd;
+
+.section-1 .header {
     min-height: 10vh;
+    border: 1px solid #fffdfd;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+.header ul{
+    display: flex;
+    gap: 6px;
+    list-style: none;
+}
+.header ul li{
+    width: 80%;
+    border: 1px solid #ffefef;
+}
+.header ul li a{
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
 @media only screen and (max-width:490px) {
-    .container{
+    .container {
         width: 100%;
-    }    
-    .container .s{
+    }
+
+    .container .s {
         min-height: 92vh;
+    }
+
+    .container .header {
+        min-height: 6vh;
     }
 
 }
