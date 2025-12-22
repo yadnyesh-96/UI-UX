@@ -8,14 +8,14 @@
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     border: 1px solid #000;
 }
 
 .container .S {
     width: 100%;
-    min-height: 100vh;
+    min-height: 93vh;
     border: 1px solid #000;
 }
 
@@ -173,7 +173,7 @@
     /* border: 1px solid #ff1111; */
     align-content: center;
     text-align: center;
-    padding: 30px;
+    /* padding: 30px; */
 }
 
 .s-1 img {
@@ -238,7 +238,7 @@
 }
 
 
-@media only screen and (max-width:768px) {
+@media only screen and (min-width:490px) and (max-width:768px) {
     .container {
         width: 100%;
     }
@@ -254,15 +254,18 @@
     .container .menu ul li {
         width: 17%;
     }
-
+    
+    
     .container .menu ul li a {
         font-size: 1.6vh;
+        
     }
 
     .container .section-2 {
         min-height: 45vh;
 
     }
+
 
     .section-2 .s-1 {
         height: 45vh;
@@ -307,6 +310,7 @@
 
     .container .menu ul li {
         width: 20%;
+
     }
 
     .container .menu ul li a {
