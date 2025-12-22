@@ -1,0 +1,28 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+
+}
+.container .s{
+    min-height: 100vh;
+    border: 1px solid #000;
+
+}
+.container .section-1{
+    background-image:
+        linear-gradient(to left, rgba(255, 255, 255, 0) 50%, rgb(0, 0, 0) 100%),
+        url('../Images/duo-1.jpeg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
