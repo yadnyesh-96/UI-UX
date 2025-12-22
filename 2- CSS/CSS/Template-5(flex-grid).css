@@ -169,7 +169,7 @@
 
 .section-2 .s-1 {
     width: 500px;
-    height: 65vh;
+    height: 70vh;
     /* border: 1px solid #ff1111; */
     align-content: center;
     text-align: center;
@@ -199,15 +199,21 @@
 }
 
 .section-2 .S2-Box1 {
-    background-color: #db834d;
+    background-color: #393838;
 }
 
 .section-2 .S2-Box2 {
-    background-color: #88aac2;
+    background-color: #41D3D6;
 }
 
+
 .section-2 .S2-Box3 {
-    background-color: #c1a74b;
+    background-color: #36b4b4;
+}
+
+/* section -3  */
+.container .section-3{
+    
 }
 
 @media only screen and (max-width:768px) {
@@ -232,7 +238,7 @@
     }
 
     .container .section-2 {
-        min-height: 50vh;
+        min-height: 45vh;
 
     }
 
@@ -282,7 +288,7 @@
     }
 
     .container .section-2 {
-        min-height: 35vh;
+        min-height: 30vh;
     }
 
     .section-2 .s-1 {
