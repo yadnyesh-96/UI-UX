@@ -213,8 +213,16 @@
 
 /* section -3  */
 .container .section-3{
-    
+    text-align: center;
+    align-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
+.section-3 p{
+    margin: 25px;
+    text-align:inherit;
+}
+
 
 @media only screen and (max-width:768px) {
     .container {
