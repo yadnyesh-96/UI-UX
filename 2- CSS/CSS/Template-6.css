@@ -25,4 +25,18 @@
 
     background-repeat: no-repeat;
     background-size: cover;
+    background-position:center;
+}
+.section-1 .header{
+    border: 1px solid #fffdfd;
+    min-height: 10vh;
+}
+@media only screen and (max-width:490px) {
+    .container{
+        width: 100%;
+    }    
+    .container .s{
+        min-height: 92vh;
+    }
+
 }
