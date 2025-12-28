@@ -27,6 +27,11 @@
     box-shadow: 0 0 20px rgba(241, 237, 176, 0.7); 
     
 }
+.arrow img{
+    width: 75%;
+    border-radius: 60px;
+    
+}
 .header {
     position: sticky;
     top:0px;
