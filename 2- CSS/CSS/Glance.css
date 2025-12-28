@@ -1,18 +1,17 @@
-
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
     background-color: rgb(109, 76, 138);
     font-family: sans-serif;
-}   
+}
 
-.container{
+.container {
     width: 80%;
     margin: auto;
 }
 
-.header{
+.header {
     width: 100%;
     margin: auto;
     height: 65px;
@@ -21,21 +20,24 @@
     background-color: transparent;
     align-content: center;
 }
-.header h3{
+
+.header h3 {
     margin-left: 15px;
     color: #F2DF22;
-        background-color: transparent;
+    background-color: transparent;
     font-weight: bolder;
 }
 
-.S{
+.S {
     min-height: 90vh;
-    border: 1px solid #ff0000; /*  remove it after */
+    border: 1px solid #ff0000;
+    /*  remove it after */
     display: flex;
     gap: 60px;
     padding: 60px;
 }
-.S .M{
+
+.S .M {
     width: 50%;
     max-height: 70vh;
     border: 1px solid #000;
