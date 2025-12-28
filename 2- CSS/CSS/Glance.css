@@ -32,7 +32,7 @@
 
 .S {
     min-height: 90vh;
-    border: 1px solid #ff0000;
+    border: 1px solid #33ff00;
     /*  remove it after */
     display: flex;
     gap: 60px;
