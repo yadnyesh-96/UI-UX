@@ -16,21 +16,25 @@
     width: 55px;
     height: 55px;
     border-radius: 60px;
-
+    padding: 10px;
     position: fixed;
     top: 85%;
     left: 83%;
     z-index: 1;
     
     align-content: center;
-    border: 1px solid #ffee00;
+    border: 1px solid #5d0174;
+    background-color: white;
     box-shadow: 0 0 20px rgba(241, 237, 176, 0.7); 
     
 }
+.arrow a{
+    background-color: transparent;
+}
 .arrow img{
-    width: 75%;
+    width: 100%;
     border-radius: 60px;
-    
+    background-color: transparent;
 }
 .header {
     position: sticky;
