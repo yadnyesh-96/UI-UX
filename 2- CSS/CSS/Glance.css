@@ -79,6 +79,8 @@
 .S .M {
     width: 50%;
     max-height: 70vh;
+    padding: 20px;
+
     border: 1px solid #000;
 }
 
