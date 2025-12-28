@@ -17,12 +17,14 @@
     margin: auto;
     height: 65px;
     border: 1px solid #ffffff;
-
+    position: fixed;
+    background-color: transparent;
     align-content: center;
 }
 .header h3{
     margin-left: 15px;
     color: #F2DF22;
+        background-color: transparent;
     font-weight: bolder;
 }
 
