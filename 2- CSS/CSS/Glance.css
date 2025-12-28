@@ -79,11 +79,16 @@
 .S .M {
     width: 50%;
     max-height: 70vh;
-    padding: 20px;
+    padding-top: 30px;
 
     border: 1px solid #000;
 }
-
+.S1 .head{
+    width: 70%;
+    height: 40px;
+    border-radius: 0px 10px 0px 10ex;
+    border: 1px solid #fff8f8;
+}
 @media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
     .container {
         width: 100%;
