@@ -7,8 +7,13 @@
     font-family: sans-serif;
 }   
 
-.header{
+.container{
     width: 80%;
+    margin: auto;
+}
+
+.header{
+    width: 100%;
     margin: auto;
     height: 65px;
     border: 1px solid #ffffff;
@@ -17,4 +22,10 @@
 }
 .header h3{
     margin-left: 8px;
+    color: #ffe600;
+}
+
+.S{
+    min-height: 100vh;
+     border: 1px solid #ff0000; /*  remove it after */
 }
