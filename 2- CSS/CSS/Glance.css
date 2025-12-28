@@ -7,7 +7,7 @@
 }
 
 .container {
-    width: 100%;
+    width: 80%;
     margin: auto;
     position: relative
 }
@@ -55,7 +55,8 @@
     height: 65px;
     border: 1px solid #ffffff;
 
-    background-color: transparent;
+    background-color: rgba(109, 76, 138, 0.74);
+     backdrop-filter: blur(10px);
     align-content: center;
 }
 
