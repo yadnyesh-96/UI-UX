@@ -90,9 +90,14 @@
     background-color: #f6704ec9;
     border: 1px solid #fff8f8;
     align-content: center;
+    
 }
 .head h2{
+    margin-left: 10px;
+    letter-spacing: 2px;
+    color: white;
     background-color: transparent;
+    font-weight: bold;
 }
 @media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
     .container {
