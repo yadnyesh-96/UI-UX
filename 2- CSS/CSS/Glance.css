@@ -44,3 +44,10 @@
     max-height: 70vh;
     border: 1px solid #000;
 }
+
+/* @media only screen and (max-width:490px) */
+@media only screen and (max-width:490){
+    .container{
+        width: 100%;
+    }
+}
