@@ -23,7 +23,9 @@
     z-index: 1;
     
     align-content: center;
-    border: 1px solid #fdfdfd;
+    border: 1px solid #ffee00;
+    box-shadow: 0 0 20px rgba(241, 237, 176, 0.7); 
+    
 }
 .header {
     position: sticky;
