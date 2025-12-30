@@ -99,6 +99,19 @@
     background-color: transparent;
     font-weight: bold;
 }
+
+.footer{
+    width: 100%;
+    min-height: 50vh;
+    background-color: #2642A3;
+    border: 1px solid #000;    
+}
+.footer .white{
+    width: 30%;
+    min-height: 40vh;
+    background-color: white;
+    border-radius: 0px 0px 55px 0px;   
+}
 @media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
     .container {
         width: 100%;
@@ -166,5 +179,11 @@
     .S .M {
         width: 100%;
         min-height: 60vh;
+    }
+    .footer{
+        min-height: 25vh;
+    }
+    .footer .white{
+        width: 40%;
     }
 }
