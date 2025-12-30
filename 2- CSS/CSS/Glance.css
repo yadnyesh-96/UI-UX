@@ -105,7 +105,7 @@
 
 
 /* footer  */
-.footer {
+/* .footer {
     width: 100%;
     min-height: 55vh;
     background-color: #2642A3;
@@ -145,7 +145,7 @@
     width: 40%;
     top: 58px;
     left: 20px;
-    /* right: 100px; */
+    
     background-color: crimson;
     transition: all 0.3s linear;
 }
@@ -165,25 +165,24 @@
     font-size: 13px;
     margin-top: 8px;
     font-weight: bolder;
-}
+} */
 /* header social content section  */
+/* 
 .footer .social{
     padding: 20px;
-    /* border: 1px solid #000; */
+    
     width: 80%;
     background-color: transparent;
     display: grid;
      grid-template-columns: repeat(4,1fr);
-    /* grid-template-rows: ; */
-
-    /* grid area divide here  */
+   
     grid-template-areas: "div1 div1 div1 div1"
     "div2 div3 div4 div5"
     "div6 div6 div6 div6";
 
 }
 .social .S-M{
-    /* border: 1px solid #000; */
+    
     height: 100px;
     background-color: transparent;
    
@@ -234,14 +233,14 @@
 #icon{
     text-align: center;
     align-content: center;
-    /* background-color: transparent; */
+    
 }
 
 #icon a i{
     background-color: transparent;
     color: white;
     font-size: 40px;    
-}
+} */
 
 
 /* @media quries  */
@@ -314,8 +313,9 @@
         min-height: 55vh;
     }
 
+
     /* footer start here  */
-    .footer{
+    /* .footer{
         width: 100%;
         height: 10vh;
     }
@@ -340,6 +340,6 @@
     }
     .white h3{
         font-size: 10px;
-    }
+    } */
     
 }
