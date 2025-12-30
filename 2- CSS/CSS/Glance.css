@@ -133,21 +133,18 @@
 .white h2::after {
     content: "";
     position: absolute;
-    height: 2px;
-
-
-    width: 20%;
-
-
-    top: 40px;
-
-
-    left: 35px;
+    height: 4px;
+    width: 40%;
+    top: 58px;
+    left: 20px;
+    /* right: 100px; */
     background-color: crimson;
-
-
+    transition: all 0.3s linear;
 }
-
+.white h2:hover:after{
+    cursor: pointer;
+    width: 70%;
+}
 @media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
     .container {
         width: 100%;
