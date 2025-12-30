@@ -56,7 +56,7 @@
     border: 1px solid #ffffff;
 
     background-color: rgba(109, 76, 138, 0.74);
-     backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     align-content: center;
 }
 
@@ -83,16 +83,18 @@
 
     border: 1px solid #000;
 }
-.S1 .head{
+
+.S1 .head {
     width: 60%;
     height: 40px;
     border-radius: 0px 20px 20px 0px;
     background-color: #f6704ec9;
     border: 1px solid #fff8f8;
     align-content: center;
-    
+
 }
-.head h2{
+
+.head h2 {
     margin-left: 10px;
     letter-spacing: 2px;
     color: white;
@@ -100,18 +102,52 @@
     font-weight: bold;
 }
 
-.footer{
+.footer {
     width: 100%;
     min-height: 50vh;
     background-color: #2642A3;
-    border: 1px solid #000;    
+    border: 1px solid #000;
 }
-.footer .white{
+
+.footer .white {
     width: 30%;
     min-height: 40vh;
     background-color: white;
-    border-radius: 0px 0px 55px 0px;   
+    border-radius: 0px 0px 55px 0px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    padding-left: 20px;
+    gap: 8px;
+    position: relative;
 }
+
+.white h2 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    background-color: transparent;
+
+}
+
+.white h2::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+
+
+    width: 20%;
+
+
+    top: 40px;
+
+
+    left: 35px;
+    background-color: crimson;
+
+
+}
+
 @media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
     .container {
         width: 100%;
@@ -180,10 +216,14 @@
         width: 100%;
         min-height: 60vh;
     }
-    .footer{
+
+    .footer {
         min-height: 25vh;
     }
-    .footer .white{
-        width: 40%;
+
+    .footer .white {
+        width: 35%;
+        min-height: 20vh;
+        border-radius: 0px 0px 30px 0px;
     }
 }
