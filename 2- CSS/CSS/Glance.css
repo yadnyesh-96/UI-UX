@@ -188,12 +188,34 @@
 .S-M a{ background-color: transparent;
    
 }
-.social .div1{grid-area: div1;}
+.social .div1{
+    grid-area: div1;
+    text-align: center;
+    align-content: center;
+    position: relative;
+}
+.div1 h1{
+    background-color: transparent;
+    color: white;
+    letter-spacing: 2px;
+    white-space: 3px;
+    font-size: 35px;
+}
+.div1 h1::after{
+    content: "";
+    position: absolute;
+    width: 35%;
+    height: 1px;
+    top: 80px;
+    left: 350px;
+    background-color: #fcfcfc;
+}
 .social .div2{grid-area: div2;}
 .social .div3{grid-area: div3;}
 .social .div4{grid-area: div4;}
 .social .div5{grid-area: div5;}
 .social .div6{grid-area: div6;}
+
 
 #icon{
     text-align: center;
