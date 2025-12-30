@@ -102,23 +102,30 @@
     font-weight: bold;
 }
 
+
+/* footer  */
 .footer {
     width: 100%;
-    min-height: 50vh;
+    min-height: 55vh;
     background-color: #2642A3;
     border: 1px solid #000;
+
+    display: flex;
 }
 
 .footer .white {
     width: 20%;
-    min-height: 40vh;
+    height: 300px;
     background-color: white;
     border-radius: 0px 0px 50px 0px;
     display: flex;
     flex-direction: column;
     padding-top: 15px;
     padding-left: 20px;
-    gap: 8px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+
+    gap: 5px;
     position: relative;
 }
 
@@ -141,27 +148,44 @@
     background-color: crimson;
     transition: all 0.3s linear;
 }
-
-.white h2:hover:after {
+.white h2:hover:after{
     cursor: pointer;
     width: 70%;
 }
-
-.white p {
+.white p{
     background-color: transparent;
     font-size: 12px;
     margin-top: 5px;
     margin-right: 30px;
     text-align: start;
 }
-
-.white h3 {
+.white h3{
     background-color: transparent;
     font-size: 13px;
     margin-top: 8px;
     font-weight: bolder;
 }
 
+.footer .social{
+    border: 1px solid #000;
+    width: 80%;
+    background-color: transparent;
+    display: grid;
+
+}
+.social .S-M{
+    border: 1px solid #000;
+    height: 100px;
+    background-color: transparent;
+}
+.social .div1{grid-area: div1;}
+.social .div2{}
+.social .div3{}
+.social .div4{}
+.social .div5{}
+.social .div6{}
+
+/* @media quries  */
 @media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
     .container {
         width: 100%;
@@ -228,39 +252,33 @@
 
     .S .M {
         width: 100%;
-        min-height: 60vh;
+        min-height: 55vh;
     }
-
-    .footer {
+    .footer{
+        width: 100%;
         height: 10vh;
-        display: flex;
-        flex-direction: column;
     }
-
-    .footer .white {
-        gap: 1px;
-        width: 45%;
-        height: 10px;
-        border-radius: 0px 0px 30px 0px;
+    .footer .white{
+        width: 48%;
+        height: 220px;
+        padding-right: 5px;
     }
-
-    .white h2 {
+    .white h2{
         letter-spacing: 0px;
         font-size: 14px;
     }
-
-    .white h2::after {
+    .white h2::after{
+        width: 70%;
         height: 2px;
         top: 35px;
-        width: 70%;
     }
-
-    .white p {
-
-        font-size: 8px;
+    .white p{
+        width: 90%;
+        font-size: 7px;
+        text-align: start;
     }
-
-    .white h3 {
-        font-size: 8px;
+    .white h3{
+        font-size: 10px;
     }
+    
 }
