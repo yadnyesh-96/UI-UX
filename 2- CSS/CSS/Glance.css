@@ -168,7 +168,7 @@
 
 .footer .social{
     padding: 20px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     width: 80%;
     background-color: transparent;
     display: grid;
@@ -180,7 +180,7 @@
 
 }
 .social .S-M{
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     height: 100px;
     background-color: transparent;
    
@@ -216,6 +216,17 @@
 .social .div5{grid-area: div5;}
 .social .div6{grid-area: div6;}
 
+.div6{
+    text-align: center;
+    align-content: center;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.div6 p{
+    text-align:inherit;
+    background-color: transparent;
+    color: white;
+}
 
 #icon{
     text-align: center;
@@ -226,9 +237,7 @@
 #icon a i{
     background-color: transparent;
     color: white;
-    font-size: 40px;
-    
-    
+    font-size: 40px;    
 }
 
 
