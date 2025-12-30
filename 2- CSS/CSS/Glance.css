@@ -96,6 +96,19 @@
     position: relative;
     overflow: hidden;
 }
+.M .head{
+   
+    width: 60%;
+    min-height: 50px;
+    /* border-left: 5px solid #FF4B57; */
+ /* box-shadow: offset-x offset-y blur-radius spread-radius color inset; */
+    box-shadow: -6px 0 0px -1px #FF4B57;
+    border-radius: 0px 30px 0px 0px; 
+    padding-left: 30px;
+    align-content: center;
+
+}
+
 .S .M::before {
     content: "";
     position: absolute;
@@ -127,17 +140,7 @@
 
 
 
-.M .head{
-    width: 60%;
-    min-height: 50px;
-    /* border-left: 5px solid #FF4B57; */
- /* box-shadow: offset-x offset-y blur-radius spread-radius color inset; */
-    box-shadow: -6px 0 0px -1px #FF4B57;
-    border-radius: 0px 30px 0px 0px; 
-    padding-left: 30px;
-    align-content: center;
 
-}
 
 .head h3{
     background-color: transparent;
@@ -168,6 +171,7 @@
     margin-left: 25px;
     margin-right: 70px;
     background-color: transparent;
+    color: white;
 }
 /* footer  */
 /* .footer {
