@@ -136,7 +136,9 @@
     border-radius: 0px 30px 0px 0px; 
     padding-left: 30px;
     align-content: center;
+
 }
+
 .head h3{
     background-color: transparent;
     color: #FF4B57;
@@ -149,9 +151,24 @@
     color: rgba(255, 255, 255, 0.514);
     font-size: 55px;
     margin-left: 25px;
-    margin-top: 26px;
+    margin-top: 25px;
+    margin-bottom: 35px;
 }
-
+.M ul{
+    background-color: transparent;
+    margin-left: 40px;
+}
+.M ul li{
+    color: whitesmoke;
+    /* list-style: none; */
+    background-color: transparent;
+}
+.M p{
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 70px;
+    background-color: transparent;
+}
 /* footer  */
 /* .footer {
     width: 100%;
