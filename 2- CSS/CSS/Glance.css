@@ -167,23 +167,48 @@
 }
 
 .footer .social{
+    padding: 20px;
     border: 1px solid #000;
     width: 80%;
     background-color: transparent;
     display: grid;
+     grid-template-columns: repeat(4,1fr);
+    /* grid-template-rows: ; */
+    grid-template-areas: "div1 div1 div1 div1"
+    "div2 div3 div4 div5"
+    "div6 div6 div6 div6";
 
 }
 .social .S-M{
     border: 1px solid #000;
     height: 100px;
     background-color: transparent;
+   
+}
+.S-M a{ background-color: transparent;
+   
 }
 .social .div1{grid-area: div1;}
-.social .div2{}
-.social .div3{}
-.social .div4{}
-.social .div5{}
-.social .div6{}
+.social .div2{grid-area: div2;}
+.social .div3{grid-area: div3;}
+.social .div4{grid-area: div4;}
+.social .div5{grid-area: div5;}
+.social .div6{grid-area: div6;}
+
+#icon{
+    text-align: center;
+    align-content: center;
+    /* background-color: transparent; */
+}
+
+#icon a i{
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+    
+    
+}
+
 
 /* @media quries  */
 @media only screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
