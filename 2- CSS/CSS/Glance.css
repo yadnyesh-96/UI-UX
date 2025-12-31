@@ -59,9 +59,9 @@
     width: 100%;
     margin: auto;
     height: 75px;
-    border: 1px solid #ffffff;
+    /* border: 1px solid #ffffff; */
 
-    /* background-color: rgba(109, 76, 138, 0.74); */
+    background-color: rgba(109, 76, 138, 0.74);
     backdrop-filter: blur(10px);
     align-content: center;
     z-index: 1;
@@ -94,7 +94,7 @@
     border: 1px solid #ffffff33;
 
     position: relative;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .M .head{
    
@@ -109,7 +109,7 @@
 
 }
 
-.S .M::before {
+.S .M-1::before {
     content: "";
     position: absolute;
     inset: 0;
@@ -135,7 +135,7 @@
 }
 .S .M > * {
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 
 
@@ -147,7 +147,7 @@
     color: #FF4B57;
     letter-spacing: px;
     word-spacing: 5px;
-    font-size: 24px;
+    font-size: 26px;
 }
 .M i{
     background-color: transparent;
@@ -162,17 +162,38 @@
     margin-left: 40px;
 }
 .M ul li{
+    list-style:square;
+    font-size: 18px;
     color: whitesmoke;
     /* list-style: none; */
     background-color: transparent;
 }
 .M p{
+    font-size: 18px;
     margin-top: 30px;
     margin-left: 25px;
     margin-right: 70px;
     background-color: transparent;
     color: white;
 }
+.container .M1{
+    position: relative;
+}
+.M p::after{
+    position: absolute;
+    content: "";
+    width: 45%;
+    background-color: #ffffff;
+    height: 1px;
+    bottom: -40px;
+    left: 0px;
+    transition: all 0.3s linear;
+}
+.M p:hover::after{
+    width: 80%;
+}
+
+
 /* footer  */
 /* .footer {
     width: 100%;
@@ -354,7 +375,9 @@
         width: 100%;
 
     }
-
+    .header h3{
+        font-size: 18px;
+    }
     .arrow {
         text-align: center;
         width: 50px;
@@ -379,8 +402,38 @@
 
     .S .M {
         width: 100%;
-        min-height: 55vh;
+        min-height: 65vh;
     }
+
+    .M .head{
+        min-height: 40px;
+        width: 80%;
+    }
+    .head h3{
+        font-size: 20px;
+    }
+    .M i{
+        margin-top: 15px;
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .M ul li{
+        
+        font-size: 14px;
+    }
+    .M p{
+        margin-top: 15px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+    .M p::after{
+        bottom: -15px;
+        width: 50%;
+    }
+    .M p:hover:after{
+        width: 60%;
+    }
+
 
 
     /* footer start here  */
