@@ -20,12 +20,12 @@
     <div class="container">
         <!-- header area  -->
         <div class="header">
-            <div class="profile"><i class="fa-solid fa-bars"></i> <img src="../Images/executive.jpeg" alt=""></div>
+            <div class="profile" id="profile"><i class="fa-solid fa-bars"></i> <img src="../Images/executive.jpeg" alt=""></div>
             <div class="heading-s">
                 <h3>20<span style="color: #FF4B57; background-color: transparent;">26</span> AT A GLANCE</h3>
                 <h3>A Visual Summary of the year</h3>
             </div>
-            <div class="s-icons">
+            <div class="s-icons" id="s-icons">
                 <div class="ic">
                     <div class="ic1"><i class="fa-brands fa-github"></i></div>
                     <div class="ic2"><a href="">Git-github</a></div>
@@ -122,8 +122,8 @@
 
     <!-- js script  here  -->
     <script>
-      const toggle = document.getElementById("menu-toggle");
-      const menu = document.getElementById("menu");
+      const toggle = document.getElementById("profile");
+      const menu = document.getElementById("s-icons");
 
       toggle.addEventListener("click", () => {
         menu.classList.toggle("active");
