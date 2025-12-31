@@ -392,6 +392,7 @@
     .head h3{
         font-size: 18px;
     }
+    
     .M i{
         margin-top: 10px;
         font-size: 28px;
@@ -503,7 +504,8 @@
 
     .S .M {
         width: 100%;
-        min-height: 65vh;
+        min-height: 75vh;
+        padding-right: 8px;
     }
 
     .M .head {
@@ -516,7 +518,7 @@
     }
 
     .M i {
-        margin-top: 15px;
+        margin-top: 10px;
         font-size: 40px;
         margin-bottom: 15px;
     }
@@ -527,18 +529,18 @@
     }
 
     .M p {
-        margin-top: 15px;
+        margin-top: 5px;
         font-size: 14px;
-        margin-right: 10px;
+        margin-right: 6px;
     }
 
     .M p::after {
         bottom: -15px;
-        width: 50%;
+        width: 0%;
     }
 
     .M p:hover:after {
-        width: 60%;
+        width: 0%;
     }
 
     .header {
