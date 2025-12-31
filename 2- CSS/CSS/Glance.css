@@ -86,7 +86,9 @@
     border: 1px solid #483862;
     box-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
-
+.profile i{
+    display: none;
+}
 .header .heading-s {
     flex-basis: 55%;
     margin-top: 7px;
@@ -539,6 +541,7 @@
     .profile img{
         width: 58%;
         height: 45px;
+        display: none;
     }
     .header .heading-s{
         flex-basis: 75%;
