@@ -436,53 +436,5 @@
         margin-left: 8px;
     }
 
-    .header .s-icons {
-        /* position: absolute;
-        height: 200px;
-        top: 75px;
-        right: 150px;
-        width: 180px;
-        flex-direction: column;
-        background-color: rgba(109, 76, 138, 0.5);
-        padding: 10px;
-        
-        display: none;
-         transition: transform 0.4s ease, opacity 0.4s ease; */
-
-        position: absolute;
-        height: 400px;
-        top: 75px;
-        right: 150px;
-        width: 180px;
-
-        flex-direction: column;
-        background-color: rgba(109, 76, 138, 0.5);
-        padding: 10px;
-
-        /* animation setup */
-        transform: translateX(-120%);
-        opacity: 0;
-        pointer-events: none;
-
-        display: flex;
-        transition: transform 0.4s ease, opacity 0.4s ease;
-    }
-
-    .header .s-icons.active {
-         transform: translateX(0);
-        opacity: 1;
-        pointer-events: auto;
-    }
-
-    .profile i:hover .s-icons {
-       
-        display: block;
-        visibility: visible;
-    }
-
-   .header .s-icons .ic{
-        width: 80%;
-        min-height: 10px;
-   }
-
+    
 }
