@@ -125,7 +125,7 @@
     height: 35px;
     border-radius: 30px;
     background-color: #bab9c97a;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 
     /* text-align: center; */
     align-items: center;
@@ -162,7 +162,10 @@
 #ic1 {
     background-color: #5681ca8f;
 }
-
+#ic1 i{
+    margin-left: 10px;
+    font-size: 20px;
+}
 
 
 /* sections here  */
