@@ -87,7 +87,7 @@
     box-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
 .profile i{
-    display: none;
+    visibility: hidden;
 }
 .header .heading-s {
     flex-basis: 55%;
@@ -535,13 +535,18 @@
         width: 100%;
     }
     .header .profile{
-        flex-basis: 25%;
+        flex-basis: 20%;
+        
         /* display: none; */
     }
     .profile img{
-        width: 58%;
-        height: 45px;
         display: none;
+    }
+    .profile i{
+        color:rgb(230, 230, 230);
+        font-size: 32px;
+        background-color: transparent;
+        visibility: visible;
     }
     .header .heading-s{
         flex-basis: 75%;
