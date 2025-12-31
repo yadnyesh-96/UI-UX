@@ -529,6 +529,29 @@
         width: 60%;
     }
 
+    .header{
+        width: 100%;
+    }
+    .header .profile{
+        flex-basis: 25%;
+        /* display: none; */
+    }
+    .profile img{
+        width: 58%;
+        height: 45px;
+    }
+    .header .heading-s{
+        flex-basis: 75%;
+        /* border: 1px solid #000; */
+    }
+    .heading-s h3{
+        font-size: 14px;
+        margin-left: 8px;
+    }
+    .header .s-icons{
+        width: 0%;
+        display: none;
+    }
 
 
     /* footer start here  */
