@@ -21,6 +21,11 @@
 .container .section-1{
     border: 2px solid #ff0000;
     width: 100%;
+
+    background-image: url(../Images/National\ Geographic\ Your\ Shot.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .section-1 img{
