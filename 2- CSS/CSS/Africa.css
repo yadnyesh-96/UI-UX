@@ -77,11 +77,15 @@
     font-size: 16px;
     font-weight: 500;
     color:#615E33;
-    transition: ;
+    transition: all 0.2s linear;
 }
 .menu ul li a:hover{
-    padding: 2px;
-    border: 1px solid #000;
+    padding: 2px 7px;
+    border-radius: 5px;
+    color: white;
+    background-color: #615E33;
+    box-shadow: 0px 0px 12px #615E33;
+    
 }
 .buttons {
     width: 25%;
