@@ -59,19 +59,30 @@
 
 }
 
-.logo i {
-    font-size: 35px;
-}
+.logo i { font-size: 40px; }
 
-.logo h4 {
-    letter-spacing: 4px;
-}
+.logo h4 { letter-spacing: 4px;}
 
 .menu {
     width: 50%;
     border: 1px solid #000;
 }
-
+.menu ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color:#615E33;
+    transition: ;
+}
+.menu ul li a:hover{
+    padding: 2px;
+    border: 1px solid #000;
+}
 .buttons {
     width: 25%;
     border: 1px solid #ec1313;
