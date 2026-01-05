@@ -28,9 +28,9 @@
     background-position: center;
 
     border-radius: 20px;
-
+    padding: 50px;
 }
 
-.section-1 img{
-
+.section-1 .header{
+    border: 1px solid #ffffff;
 }
