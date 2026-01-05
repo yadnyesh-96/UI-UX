@@ -109,5 +109,39 @@
     box-shadow: 0px 0px 12px #756851;
 }
 .buttons a{
+    color: white;
+    text-decoration: none;
+}
+
+.section-1 .content{
+    width: 50%;
+    margin-top: 120px;
+    height: 300px;
+    /* border: 1px solid #000; */
+}
+.section-1 h1{
+    font-size: 70px;
+    font-weight: 400;
+    color: white;
+
+    margin-bottom: 18px;
+}
+.section-1 p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.section-1 button{
+    padding: 3px 7px;
+    border-radius: 5px;
+    background-color: #FCBF54;
+    transition: all 0.2s linear;
+}
+.section-1 button:hover{
+    padding: 4px 8px;
+    box-shadow: 0px 0px 12px #ffffff;
+}
+.section-1 a{
+    color: white;
     text-decoration: none;
 }
