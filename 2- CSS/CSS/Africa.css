@@ -22,9 +22,12 @@
     border: 2px solid #ff0000;
     width: 100%;
 
-    background-image: url(../Images/National\ Geographic\ Your\ Shot.jpeg);
+    background-image: url(../Images/leon-.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
 
 }
 
