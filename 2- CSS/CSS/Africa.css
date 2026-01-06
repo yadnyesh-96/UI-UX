@@ -186,17 +186,6 @@
         border: 1px solid #000;
     }
 
-    .container .section-1 {
-        /* border: 2px solid #ff0000; */
-        /* width: 100%; */
-
-        background-image: url(../Images/leon-.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
-        border-radius: 20px;
-        padding: 50px;
-    }
+    
 
 }
