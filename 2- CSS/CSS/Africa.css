@@ -74,6 +74,7 @@
 
 .menu {
     width: 50%;
+    position: relative;
     /* border: 1px solid #000; */
 }
 
@@ -99,7 +100,12 @@
     box-shadow: 0px 0px 12px #615E33;
 
 }
-
+/* Burger hidden on desktop */
+.burger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
 .buttons {
     width: 25%;
     display: flex;
@@ -200,6 +206,42 @@
     .header h4{
         font-size: 11px;
     }
-    
+
+    @media (max-width: 768px) {
+    .menu {
+        width: 100%;
+    }
+
+    /* Show burger */
+    .burger {
+        display: block;
+        color: #615E33;
+        padding: 10px;
+    }
+
+    /* Hide menu initially */
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 45px;
+        right: 10px;
+        width: 200px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
+    .menu ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Active menu */
+    .menu ul.active {
+        display: flex;
+    }
+}
+
 
 }
