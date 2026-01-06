@@ -186,6 +186,20 @@
         border: 1px solid #000;
     }
 
+    .container .section-1{
+        padding: 15px;
+    }
+    .container .header{
+        height: 50px;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    .header i{
+        font-size: 20px;
+    }
+    .header h4{
+        font-size: 11px;
+    }
     
 
 }
