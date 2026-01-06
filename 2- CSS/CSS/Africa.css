@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=BBH+Bartle&family=Fjalla+One&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
-    padding: 0;
-    margin: 0;
+    padding: 0%;
+    margin: 0%;
     box-sizing: border-box;
 
     font-family: "Outfit", sans-serif;
@@ -29,7 +29,7 @@
 
 .container .section-1 {
     /* border: 2px solid #ff0000; */
-    width: 100%;
+    /* width: 100%; */
 
     background-image: url(../Images/leon-.jpg);
     background-repeat: no-repeat;
@@ -154,13 +154,7 @@
 
 /* media quiries */
 @media only screen and (max-width:486px){
-    .container{
-        width: 100%;
-        padding: 10px;
-    }
     
-    .container .S{
-        width: 100%;
-        height: 600px;
-    }
+    
+    
 }
