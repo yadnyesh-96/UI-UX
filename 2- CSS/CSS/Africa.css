@@ -190,24 +190,53 @@
     "projects2 projects3 projects4";
 
     padding: 20px;
-    gap: 25px;
+    gap: 30px;
+    justify-items: center;
     align-content:center
+    
 }
 
 .prj .projects1{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+    /* text-align: center; */
+    
     grid-area: projects1;
     border: 1px solid #000;
 }
+.projects1 h1{
+    font-size: 48px;
+    font-weight:300;
+    color: white;
+}
+.projects1 p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200;
+    color: #FCBF54;
+}
+
+/* card -2  */
 .prj .projects2{
     grid-area: projects2;
+
+    width: 75%;
+
     border: 1px solid #000;
 }
+
 .prj .projects3{
     grid-area: projects3;
+    width: 75%;
     border: 1px solid #000;
 }
 .prj .projects4{
     grid-area: projects4;
+    width: 75%;
     border: 1px solid #000;
 }
 
@@ -216,7 +245,7 @@
 
     .container {
         width: 100%;
-        background-color: transparent;
+        background-color: #372d2b;
         padding: 15px;
         border: none;
 
@@ -359,8 +388,15 @@
         align-items: center;
     }
     .prj .projects1{
-        width: 100%;
+        width: 95%;
         height: 90px;
+        gap: 5px;
+    }
+    .projects1 h1{
+        font-size: 20px;
+    }
+    .projects1 p{
+        font-size: 11px;
     }
     .prj .projects2{
         width: 80%;
