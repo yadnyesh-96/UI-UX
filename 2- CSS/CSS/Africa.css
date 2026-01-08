@@ -274,7 +274,9 @@
     background-color: #372D2B;
     margin-bottom: 10px;
 }
-.projects2
+.projects2 button{
+    
+}
 /* card -3 */
 .prj .projects3{
     grid-area: projects3;
