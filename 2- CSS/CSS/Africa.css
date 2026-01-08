@@ -276,7 +276,12 @@
 }
 .projects2 button{
     background-image: linear-gradient(180deg, #FCBF54, #b1863c);
-    
+}
+.projects2 button:hover{
+    box-shadow: 5px 2px 15px 1px#372D2B;
+}
+.projects2 button a{
+    color: #372D2B;
 }
 /* card -3 */
 .prj .projects3{
