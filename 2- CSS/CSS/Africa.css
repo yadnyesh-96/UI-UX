@@ -169,7 +169,10 @@
 #btn{
     padding: 6px 20px;
 }
-#btn 
+#btn a{
+    font-size: 20px;
+    font-weight: 700;
+}
 .section-1 button:hover {
     padding: 4px 8px;
     box-shadow: 0px 0px 12px #ffffff;
