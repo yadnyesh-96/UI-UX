@@ -251,6 +251,14 @@
 .projects2 p{
     text-align: center;
 }
+.projects2 h2{
+    font-weight: 300;
+    /* font-size: 100px; */
+}
+.projects2 h5{
+    height: 2px;
+    background-color: #372D2B;
+}
 
 /* card -3 */
 .prj .projects3{
