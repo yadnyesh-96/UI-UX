@@ -166,6 +166,10 @@
     transition: all 0.2s linear;
 }
 
+#btn{
+    padding: 6px 20px;
+}
+#btn 
 .section-1 button:hover {
     padding: 4px 8px;
     box-shadow: 0px 0px 12px #ffffff;
@@ -250,13 +254,16 @@
 }
 .projects2 p{
     text-align: center;
+    font-size: 20px;
 }
 .projects2 h2{
     font-weight: 300;
     /* font-size: 100px; */
 }
 .projects2 h5{
-    height: 2px;
+    width: 90%;
+    height: 6px;
+    border-radius: 15px;
     background-color: #372D2B;
 }
 
