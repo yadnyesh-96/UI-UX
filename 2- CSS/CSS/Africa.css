@@ -342,63 +342,12 @@
     color: #372D2B;
 }
 /* card - 4 */
-.prj ..projects3 {
-    grid-area: projects3;
-
+.prj .projects4{
+    grid-area: projects4;
     width: 75%;
-    background-color: #ffffff;
-    border-radius: 15px;
-    /* border: 1px solid #000; */
-    padding: 12px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-
-    align-items: center;
-}
-
-.projects3 .img {
-    width: 100%;
-    height: 250px;
-    border-radius: 10px;
-    background-image: url(../Images/wild.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     border: 1px solid #000;
-
 }
 
-.projects3 p {
-    text-align: center;
-    font-size: 20px;
-}
-
-.projects3 h2 {
-    font-weight: 300;
-    /* font-size: 100px; */
-}
-
-.projects3 h5 {
-    width: 90%;
-    height: 6px;
-    border-radius: 15px;
-    background-color: #372D2B;
-    margin-bottom: 10px;
-}
-
-.projects3 button {
-    background-image: linear-gradient(180deg, #f7c061, #ffb73a);
-}
-
-.projects3 button:hover {
-    box-shadow: 5px 2px 15px 1px#372D2B;
-}
-
-.projects3 button a {
-    color: #372D2B;
-}
 /* media quiries */
 @media only screen and (max-width:486px) {
 
