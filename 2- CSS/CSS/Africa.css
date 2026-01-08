@@ -168,10 +168,14 @@
 
 #btn{
     padding: 6px 20px;
+    border-radius: 10px;
+    border: 1px solid #00000081;
+    transition: all 0.2s linear;
 }
 #btn a{
     font-size: 20px;
     font-weight: 700;
+    text-decoration: none;
 }
 .section-1 button:hover {
     padding: 4px 8px;
@@ -268,8 +272,9 @@
     height: 6px;
     border-radius: 15px;
     background-color: #372D2B;
+    margin-bottom: 10px;
 }
-
+.projects2
 /* card -3 */
 .prj .projects3{
     grid-area: projects3;
