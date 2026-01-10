@@ -592,5 +592,10 @@
         width: 80%;
         height: 500px;
     }
-    #btn
+    #btn{
+        padding: 5px;
+    }
+    #btn a{
+        font-size: 10px;
+    }
 }
