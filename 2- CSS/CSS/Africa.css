@@ -572,15 +572,27 @@
 
     .projects1 p {
         font-size: 11px;
+        font-weight: 300;
     }
 
     .prj .projects2 {
         width: 80%;
         height: 500px;
+
+        gap: 6px;
     }
 
     .projects2 .img {
         height: 150px;
+    }
+    .projects2 h1{
+        font-size: 18px;
+    }
+    .projects2 p{
+        font-size: 12px;
+    }
+    .projects2 h2{
+        font-size: 16px;
     }
 
     .prj .projects3 {
