@@ -76,7 +76,7 @@
 
     animation: fadeUp 1s linear;
     animation-timeline: view();
-    animation: ;
+    animation-range: entry 0% cover 40%;
 }
 @keyframes fadeUp {
     from{
@@ -111,5 +111,16 @@
   }
   .dropdown:hover .dropdown-menu {
     display: block;
+  }
+
+  .boxes{
+    padding: 10px;
+    align-content: center;
+  }
+  .boxes .box{
+    width: 90%;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow:none;
   }
 }
