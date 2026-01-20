@@ -15,3 +15,37 @@
     align-items: center;
     justify-content: space-between;
 }
+.logo{
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.menu{
+    list-style: none;
+    display: flex;
+}
+.menu li{
+    position: relative;
+}
+.menu li a{
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+}
+.menu a:hover{
+    background-color: #444;
+}
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 150px;
+    display: none;
+}
+.dropdown-menu li a{
+    padding: 10px;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}

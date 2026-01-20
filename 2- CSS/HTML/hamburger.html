@@ -8,16 +8,22 @@
 </head>
 <body>
     <nav class="nav-bar">
-        <div class="log">Portfolio</div>
+        <div class="logo">Portfolio</div>
         <input type="checkbox" id="toogle-menu">
         <label for="toogle-menu" class="menu-icon">&#9776;</label>
 
         <ul class="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
+            <li class="dropdown"><a href="#">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Project1</a></li>
+                    <li><a href="#">Project2</a></li>
+                    <li><a href="#">Project3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Contacts</a></li>
         </ul>
     </nav>
 </body>
