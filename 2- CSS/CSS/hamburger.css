@@ -57,6 +57,39 @@
     display: none;
 }
 
+.boxes{
+    width: 80%;
+    margin: auto;
+    border: 1px solid #ff0000;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 220px;
+    align-items: center;
+}
+.boxes .box{
+    width: 50%;
+    height: 600px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    box-shadow: 10px 10px 30px black;
+
+    animation: fadeUp 1s linear;
+    animation-timeline: view();
+    animation: ;
+}
+@keyframes fadeUp {
+    from{
+        opacity: 0;
+        transform: translateY(40px) scale(0.5);
+    }
+    to{
+        opacity: 1;
+        transform: rotateY(0) scale(1);
+    }
+}
+
+
 @media only screen and (max-width:768px){
     .menu {
     position: absolute;
