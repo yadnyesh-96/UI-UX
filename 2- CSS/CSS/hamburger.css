@@ -49,3 +49,10 @@
 .dropdown:hover .dropdown-menu{
     display: block;
 }
+.menu-icon{
+    display: none;
+    font-size: 25px;
+}
+#toggle-menu{
+    display: none;
+}
