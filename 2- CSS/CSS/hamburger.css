@@ -58,25 +58,25 @@
 }
 
 @media only screen and (max-width:768px){
-    .menu{
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: #222;
-        flex-direction: column;
-        display: none;
-    }
-    .menu-icon{
-        display: block;
-    }
-    #toggle-menu:checked + .menu-icon + .menu{
-        display: block;
-    }
-    .dropdown-menu{
-        position: static;
-    }
-    .dropdown:hover .dropdown-menu{
-        display: block;
-    }
+    .menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #222;
+    flex-direction: column;
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  #toggle-menu:checked + .menu-icon + .menu {
+    display: block;
+  }
+  .dropdown-menu {
+    position: static;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
 }
