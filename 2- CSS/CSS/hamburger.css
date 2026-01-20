@@ -70,11 +70,13 @@
     .menu-icon{
         display: block;
     }
-    #toggle-menu::cheked + .menu-icon + .menu{
+    #toggle-menu:checked + .menu-icon + .menu{
         display: block;
     }
     .dropdown-menu{
         position: static;
     }
-    .dropdown-menu
+    .dropdown:hover .dropdown-menu{
+        display: block;
+    }
 }
