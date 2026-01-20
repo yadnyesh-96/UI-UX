@@ -56,3 +56,10 @@
 #toggle-menu{
     display: none;
 }
+
+@media only screen and (max-width:768px){
+    .menu{
+        position: absolute;
+        top: 60px;
+    }
+}
