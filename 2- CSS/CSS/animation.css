@@ -21,8 +21,9 @@ body {
     border: 1px solid #2d6dc0;
 
     animation: bubble;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
 
 }
 
