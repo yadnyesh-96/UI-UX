@@ -8,9 +8,14 @@ body{
     display: flex;
     flex-direction: column;
 
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
+    background-color: rgb(226, 238, 247);
 }
 .box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(94, 156, 248);
     border: 1px solid #000;
 }
