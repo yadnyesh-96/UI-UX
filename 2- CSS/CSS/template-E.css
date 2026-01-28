@@ -181,12 +181,12 @@
 .section-3{
     height: 100vh;
 
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     display: flex;
 }
 .section-3 .half-img{
     width: 45%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     background-image:
         url('../Images/T-2.jpeg');
 
@@ -203,7 +203,7 @@
     padding-left: 200px;
     padding-right: 150px;
 
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     
     display: flex;
     flex-direction: column;
