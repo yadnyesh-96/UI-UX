@@ -188,15 +188,35 @@
     width: 45%;
     border: 1px solid #000;
     background-image:
-        linear-gradient(rgba(0, 0, 0, 0.61)),
-        url('../Images/grp.jpg');
+        url('../Images/T-2.jpeg');
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
 .section-3 .half-content{
     width: 55%;
     background-color: #F6F5F1;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 200px;
+    padding-right: 150px;
+
     border: 1px solid #000;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+.half-content h1{
+    font-weight: lighter;
+    font-size: 58px;
+    word-spacing: 5px;
+}
+.half-content h2{
+    font-weight: lighter;
+    font-size: 34px;
+    word-spacing: 5px;
 }
