@@ -269,7 +269,7 @@
 
 .section-4 .P {
     width: 80%;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 .P .s4-info{
     width: 100%;
@@ -367,9 +367,30 @@
 /* footer  */
 .footer{
     height: 50vh;
+    background-color: #9AA5A7;
     display: flex;
     flex-direction: column;
 
     align-items: center;
-    justify-content: center;
+    /* justify-content: center;
+     */
+     justify-content: space-evenly;
+}
+.footer h1{
+    font-size: 44px;
+    font-weight: lighter;
+    color: white;
+}
+.footer h2{
+    font-size: 26px;
+    font-weight: lighter;
+    color: white;
+}
+.footer .social img{
+    color: white;
+}
+.footer h3{
+    font-weight: lighter;
+    color: white;
+    font-size: 22px;
 }
