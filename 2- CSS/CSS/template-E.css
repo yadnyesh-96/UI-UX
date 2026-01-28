@@ -362,7 +362,7 @@
 /* The remaining code we was the copy from section-3 because of these is the reflector of that section  */
 #half-img {
     width: 45%;
-    /* border: 1px solid #000; */
+    /* border: 1px solid #000;  */
     background-image:
         url('../Images/grp.jpeg');
 
