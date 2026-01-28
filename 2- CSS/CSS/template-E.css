@@ -119,27 +119,33 @@
     gap: 45px;
     overflow: hidden;
 }
-.s2 .img img{
+
+.s2 .img img {
     height: 300px;
 }
-.s2 .info{
+
+.s2 .info {
     width: 80%;
 }
-.info h1{
+
+.info h1 {
     font-size: 48px;
 }
-.info p{
+
+.info p {
     margin-top: 12px;
-    text-align:center;
+    text-align: center;
     font-size: 18px;
     letter-spacing: 2px;
 }
-.s2 .h2{
+
+.s2 .h2 {
     width: 45%;
     padding: 7px 17px;
     background-color: #9CA7AB;
 }
-.h2 h2{
+
+.h2 h2 {
     font-size: 16px;
     color: white;
     font-weight: lighter;
@@ -178,13 +184,14 @@
 }
 
 /* section - 3 */
-.section-3{
+.section-3 {
     height: 100vh;
 
     /* border: 1px solid #000; */
     display: flex;
 }
-.section-3 .half-img{
+
+.section-3 .half-img {
     width: 45%;
     /* border: 1px solid #000; */
     background-image:
@@ -195,7 +202,7 @@
     background-position: center;
 }
 
-.section-3 .half-content{
+.section-3 .half-content {
     width: 55%;
     background-color: #F6F5F1;
     padding-top: 0px;
@@ -204,46 +211,95 @@
     padding-right: 150px;
 
     /* border: 1px solid #000; */
-    
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 35px;
 }
-.half-content h1{
+
+.half-content h1 {
     font-weight: lighter;
     font-size: 58px;
     word-spacing: 5px;
 }
-.half-content h2{
+
+.half-content h2 {
     font-weight: lighter;
     font-size: 34px;
     word-spacing: 5px;
 }
-.half-content h3{
+
+.half-content h3 {
     font-weight: lighter;
     font-size: 18px;
     text-align: start;
     word-spacing: 5px;
 }
-.half-content .read{
+
+.half-content .read {
     width: 43%;
     text-align: center;
     background-color: #A98C6A;
     padding: 7px 17px;
 }
-.read h4{
+
+.read h4 {
     font-size: 16px;
     color: white;
     font-weight: lighter;
     letter-spacing: 2px;
 }
 
+/* section-4  */
+.section-4 {
+    height: 100vh;
+    padding: 5px 10px 5px 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15vh 60vh 8vh;
+    grid-template-areas: "product1 product1 product1 product1"
+        "product2 product3 product4 product5"
+        "product6 product6 product6 product6";
 
-/* section-4 */
+    justify-items: center;
+    gap: 15px;
+    align-content: center;
+}
+
+.section-4 .P {
+    width: 90%;
+    border: 1px solid #000;
+}
+
+.section-4 .product1 {
+    grid-area: product1;
+}
+
+.section-4 .product2 {
+    grid-area: product2;
+}
+
+.section-4 .product3 {
+    grid-area: product3;
+}
+
+.section-4 .product4 {
+    grid-area: product4;
+}
+
+.section-4 .product5 {
+    grid-area: product5;
+}
+
+.section-4 .product6 {
+    grid-area: product6;
+}
+
+/* section-5 */
 /* The remaining code we was the copy from section-3 because of these is the reflector of that section */
-#half-img{
-     width: 45%;
+#half-img {
+    width: 45%;
     /* border: 1px solid #000; */
     background-image:
         url('../Images/grp.jpeg');
