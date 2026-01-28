@@ -178,4 +178,25 @@
 }
 
 /* section - 3 */
-.section-3
+.section-3{
+    height: 100vh;
+
+    border: 1px solid #000;
+    display: flex;
+}
+.section-3 .half-img{
+    width: 45%;
+    border: 1px solid #000;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.61)),
+        url('../Images/grp.jpg');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.section-3 .half-content{
+    width: 55%;
+    background-color: #F6F5F1;
+    border: 1px solid #000;
+}
