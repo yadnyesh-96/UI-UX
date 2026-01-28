@@ -253,8 +253,8 @@
 
 /* section-4  */
 .section-4 {
+    background-color: white;
     height: 100vh;
-    padding: 5px 10px 5px 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 15vh 60vh 8vh;
@@ -263,25 +263,26 @@
         "product6 product6 product6 product6";
 
     justify-items: center;
-    gap: 15px;
+    gap: 10px;
     align-content: center;
 }
 
 .section-4 .P {
-    width: 90%;
+    width: 80%;
     border: 1px solid #000;
 }
 
 .section-4 .product1 {
-    background-color: white;
+
     width: 80%;
     grid-area: product1;
     display: flex;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     align-items: center;
     justify-content: center;
 }
-.product1 h1{
+
+.product1 h1 {
     font-size: 48px;
     font-weight: lighter;
 }
@@ -304,6 +305,19 @@
 
 .section-4 .product6 {
     grid-area: product6;
+    width: 15%;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9AA5AB;
+}
+.product6 h1{
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size: 24px;
+    font-weight: lighter;
+    color: white;
 }
 
 /* section-5 */
