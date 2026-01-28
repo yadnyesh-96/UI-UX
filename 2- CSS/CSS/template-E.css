@@ -273,7 +273,17 @@
 }
 
 .section-4 .product1 {
+    background-color: white;
+    width: 80%;
     grid-area: product1;
+    display: flex;
+    border: 1px solid #000;
+    align-items: center;
+    justify-content: center;
+}
+.product1 h1{
+    font-size: 48px;
+    font-weight: lighter;
 }
 
 .section-4 .product2 {
